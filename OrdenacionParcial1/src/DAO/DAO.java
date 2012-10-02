@@ -1,7 +1,7 @@
 package DAO;
 
-import java.util.Scanner;
 import java.io.*;
+import javax.swing.JFileChooser;
 
 /**
  *
@@ -11,7 +11,7 @@ public class DAO {
 
     public String leer() {
         File f;
-        javax.swing.JFileChooser j = new javax.swing.JFileChooser();
+        JFileChooser j = new JFileChooser();
         j.showOpenDialog(j);
         try {
             String path = j.getSelectedFile().getAbsolutePath();
