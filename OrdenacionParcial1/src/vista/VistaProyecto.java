@@ -20,7 +20,7 @@ public class VistaProyecto extends javax.swing.JFrame {
      * Creates new form VistaProyecto
      */
     public VistaProyecto() {
-        
+
         initComponents();
         nombreDocLb.setText("");
     }
@@ -420,55 +420,57 @@ public class VistaProyecto extends javax.swing.JFrame {
 
     private void licenciaMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_licenciaMenuActionPerformed
         // TODO add your handling code here:
-        Licencia licencia = new Licencia(this , true);
+        Licencia licencia = new Licencia(this, true);
         licencia.setVisible(true);
-        
+
     }//GEN-LAST:event_licenciaMenuActionPerformed
 
     private void cargarArchivoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cargarArchivoBtnActionPerformed
         // TODO add your handling code here:
         ControlFilter controlFilter = new ControlFilter("txt Archivo de texto", "txt");
-       JFileChooser chooser = new JFileChooser();
-       chooser.setFileFilter(controlFilter.getFilter());
-       chooser.setAcceptAllFileFilterUsed(false);
-       chooser.showDialog(this, null);
-       File file;
-       
+        JFileChooser chooser = new JFileChooser();
+        chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        chooser.setMultiSelectionEnabled(false);
+        chooser.setCurrentDirectory(new File("./"));
+        chooser.setFileFilter(controlFilter.getFilter());
+        chooser.setAcceptAllFileFilterUsed(false);
+        chooser.showOpenDialog(this);
+        File file;
+
         try {
             file = chooser.getSelectedFile();
             nombreDocLb.setText(file.getName());
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Archivo no cargado");
         }
-        
+
     }//GEN-LAST:event_cargarArchivoBtnActionPerformed
 
     private void salirMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirMenuActionPerformed
         // TODO add your handling code here:
-        
+
         System.exit(0);
-        
+
     }//GEN-LAST:event_salirMenuActionPerformed
 
     private void cerrarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarBtnActionPerformed
         // TODO add your handling code here:
         System.exit(0);
-        
+
     }//GEN-LAST:event_cerrarBtnActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        
-        
+
+
         SubstanceLookAndFeel.setSkin("org.jvnet.substance.skin.RavenSkin");
         /*
          * Create and display the form
          */
         java.awt.EventQueue.invokeLater(new Runnable() {
 
-            
             public void run() {
                 new VistaProyecto().setVisible(true);
             }

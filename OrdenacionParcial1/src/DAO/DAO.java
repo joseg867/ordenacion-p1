@@ -34,11 +34,10 @@ public class DAO {
             return lectura;
         } catch (NullPointerException e) {
             javax.swing.JOptionPane.showMessageDialog(null, e);
-            
+
         }
         return lectura;
     }
-    
 //    public String separapalabras (){
 //        
 //    }
