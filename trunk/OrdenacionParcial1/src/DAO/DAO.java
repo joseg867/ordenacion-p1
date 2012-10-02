@@ -13,10 +13,11 @@ public class DAO {
         File f;
         JFileChooser j = new JFileChooser();
         j.showOpenDialog(j);
+        String lectura = null;
         try {
             String path = j.getSelectedFile().getAbsolutePath();
 
-            String lectura = "";
+            lectura = "";
             f = new File(path);
 
             try {
@@ -32,10 +33,10 @@ public class DAO {
 
             return lectura;
         } catch (NullPointerException e) {
-            javax.swing.JOptionPane.showMessageDialog(j, "");
-            System.exit(0);
+            javax.swing.JOptionPane.showMessageDialog(null, e);
+            
         }
-        return null;
+        return lectura;
     }
     
 //    public String separapalabras (){
