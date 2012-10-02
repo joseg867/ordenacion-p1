@@ -4,8 +4,10 @@
  */
 package vista;
 
+import controller.ControlFilter;
 import java.io.File;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import org.jvnet.substance.SubstanceLookAndFeel;
 
 /**
@@ -49,6 +51,9 @@ public class VistaProyecto extends javax.swing.JFrame {
         ordenarShellBtn = new javax.swing.JButton();
         mostarShellBtn = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
+        shellsortBtn1 = new javax.swing.JButton();
+        shellsortBtn2 = new javax.swing.JButton();
+        shellsortBtn3 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -68,9 +73,10 @@ public class VistaProyecto extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        salirMenu = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        licenciaMenu = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Algoritmos de Ordenacion");
@@ -173,11 +179,24 @@ public class VistaProyecto extends javax.swing.JFrame {
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 483, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(shellsortBtn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 216, Short.MAX_VALUE)
+                .addComponent(shellsortBtn2)
+                .addGap(211, 211, 211)
+                .addComponent(shellsortBtn3)
+                .addGap(53, 53, 53))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(shellsortBtn3)
+                    .addComponent(shellsortBtn2)
+                    .addComponent(shellsortBtn1))
+                .addContainerGap())
         );
 
         jLabel7.setText("T.Max");
@@ -195,7 +214,7 @@ public class VistaProyecto extends javax.swing.JFrame {
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(mostarShellBtn)
                             .addComponent(ordenarShellBtn))
-                        .addGap(0, 181, Short.MAX_VALUE))
+                        .addGap(0, 108, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -320,6 +339,15 @@ public class VistaProyecto extends javax.swing.JFrame {
         jLabel9.setText("Archivo Cargado:");
 
         jMenu1.setText("File");
+
+        salirMenu.setText("Salir");
+        salirMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salirMenuActionPerformed(evt);
+            }
+        });
+        jMenu1.add(salirMenu);
+
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Edit");
@@ -327,13 +355,13 @@ public class VistaProyecto extends javax.swing.JFrame {
 
         jMenu3.setText("About");
 
-        jMenuItem1.setText("Licencia");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        licenciaMenu.setText("Licencia");
+        licenciaMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                licenciaMenuActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem1);
+        jMenu3.add(licenciaMenu);
 
         jMenuBar1.add(jMenu3);
 
@@ -385,17 +413,19 @@ public class VistaProyecto extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void licenciaMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_licenciaMenuActionPerformed
         // TODO add your handling code here:
         Licencia licencia = new Licencia(this , true);
         licencia.setVisible(true);
         
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_licenciaMenuActionPerformed
 
     private void cargarArchivoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cargarArchivoBtnActionPerformed
         // TODO add your handling code here:
-        
+        ControlFilter controlFilter = new ControlFilter("txt Archivo de texto", "txt");
        JFileChooser chooser = new JFileChooser();
+       chooser.setFileFilter(controlFilter.getFilter());
+       chooser.setAcceptAllFileFilterUsed(false);
        chooser.showDialog(this, null);
        File file;
        
@@ -403,12 +433,17 @@ public class VistaProyecto extends javax.swing.JFrame {
             file = chooser.getSelectedFile();
             nombreDocLb.setText(file.getName());
         } catch (Exception e) {
-            System.err.println(e);
+            JOptionPane.showMessageDialog(this, "Archivo no cargado");
         }
         
-        
-        
     }//GEN-LAST:event_cargarArchivoBtnActionPerformed
+
+    private void salirMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirMenuActionPerformed
+        // TODO add your handling code here:
+        
+        System.exit(0);
+        
+    }//GEN-LAST:event_salirMenuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -452,7 +487,6 @@ public class VistaProyecto extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -461,6 +495,7 @@ public class VistaProyecto extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu jPopupMenu2;
+    private javax.swing.JMenuItem licenciaMenu;
     private javax.swing.JButton mostarShellBtn;
     private javax.swing.JButton mostrarBtn;
     private javax.swing.JButton mostrarExBtn;
@@ -468,5 +503,9 @@ public class VistaProyecto extends javax.swing.JFrame {
     private javax.swing.JButton ordenarBtn;
     private javax.swing.JButton ordenarExBtn;
     private javax.swing.JButton ordenarShellBtn;
+    private javax.swing.JMenuItem salirMenu;
+    private javax.swing.JButton shellsortBtn1;
+    private javax.swing.JButton shellsortBtn2;
+    private javax.swing.JButton shellsortBtn3;
     // End of variables declaration//GEN-END:variables
 }
