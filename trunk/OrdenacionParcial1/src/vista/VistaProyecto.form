@@ -91,7 +91,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="Panel" min="-2" pref="808" max="-2" attributes="0"/>
-                  <Component id="cerrarBtn" min="-2" pref="81" max="-2" attributes="0"/>
+                  <Component id="cerrarBtn" min="-2" pref="92" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
