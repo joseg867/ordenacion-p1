@@ -8,6 +8,22 @@ import javax.swing.JFileChooser;
  * @author Noe
  */
 public class DAO {
+    
+    File raiz; //este es el archivo raiz del cual se dividira
+
+    public DAO(File raiz) {
+        this.raiz = raiz;
+    }
+
+    public File getRaiz() {
+        return raiz;
+    }
+
+    public void setRaiz(File raiz) {
+        this.raiz = raiz;
+    }
+    
+    
 
     public String leer() {
         File f;
