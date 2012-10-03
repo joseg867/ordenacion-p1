@@ -9,8 +9,37 @@ import java.io.*;
  */
 public class DAO {
 
-    private int sizeArray;
+    private int sizeArray=0;
     String path;
+    File separado;
+
+    public DAO() {
+    }
+
+    public int getSizeArray() {
+        return sizeArray;
+    }
+
+    public void setSizeArray(int sizeArray) {
+        this.sizeArray = sizeArray;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    public File getSeparado() {
+        return separado;
+    }
+
+    public void setSeparado(File separado) {
+        this.separado = separado;
+    }
+    
 
     public String[] leer(File toRead) {
         this.path = toRead.getAbsolutePath();
@@ -19,11 +48,15 @@ public class DAO {
             FileReader reader = new FileReader(toRead);
             BufferedReader bufer = new BufferedReader(reader);
             String aux;
-            while ((aux = bufer.readLine()) != null) {
-                StringTokenizer tokenizer = new StringTokenizer(aux, " .,;:¿?¡!=");
+            while (bufer.ready()) {
+                aux = bufer.readLine();
+                System.out.println(aux);
+                StringTokenizer tokenizer = new StringTokenizer(aux, " ");
                 while (tokenizer.hasMoreTokens()) {
-                    if (tokenizer.nextToken().length() > 3) {
-                        array[sizeArray] = tokenizer.nextToken();
+                    String tmp;
+                    if ((tmp=tokenizer.nextToken()).length()>3) {
+                        System.out.println(tmp);
+                        array[sizeArray] = tmp;
                     }
                     sizeArray++;
                 }
@@ -41,14 +74,13 @@ public class DAO {
     
     
     public void escribir(String[] array){
-        File separado= new File("separado.txt");
+        this.separado= new File("separado.txt");
         try {
             FileWriter writer = new FileWriter(separado);
-            BufferedWriter bufer = new BufferedWriter(writer);
+            PrintWriter bufer = new PrintWriter(writer);
             
             for(int i=0 ; i<array.length;i++){
-                bufer.write(array[i]);
-                bufer.newLine();
+                bufer.println(array[i]);
             }
             
             bufer.close();
