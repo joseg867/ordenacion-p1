@@ -35,7 +35,7 @@ public class DAO {
                 String aux;
                 while ((aux = br.readLine()) != null) {
                     //lectura = lectura + aux + "\n";
-                    StringTokenizer st = new StringTokenizer(" ");
+                    StringTokenizer st = new StringTokenizer(aux," ");
                     String[] arreglo = new String[st.countTokens() + 1];
 
                     while (st.hasMoreElements()) {
