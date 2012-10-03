@@ -1,7 +1,5 @@
 package DAO;
 
-import DAO.DAO;
-
 /**
  *
  * @author Noe

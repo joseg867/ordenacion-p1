@@ -15,6 +15,17 @@ import org.jvnet.substance.SubstanceLookAndFeel;
  * @author ArandiLopez
  */
 public class VistaProyecto extends javax.swing.JFrame {
+    
+    //Atributos nuevos
+    File raiz;
+    
+    public File getRaiz(){
+        return this.raiz;
+    }
+    
+    public void setRaiz(File raiz){
+        this.raiz = raiz;
+    }
 
     /**
      * Creates new form VistaProyecto
@@ -427,7 +438,7 @@ public class VistaProyecto extends javax.swing.JFrame {
 
     private void cargarArchivoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cargarArchivoBtnActionPerformed
         // TODO add your handling code here:
-        ControlFilter controlFilter = new ControlFilter("txt Archivo de texto", "txt");
+        ControlFilter controlFilter = new ControlFilter("Archivo de texto .txt", "txt");
         JFileChooser chooser = new JFileChooser();
         chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
         chooser.setMultiSelectionEnabled(false);
@@ -435,11 +446,11 @@ public class VistaProyecto extends javax.swing.JFrame {
         chooser.setFileFilter(controlFilter.getFilter());
         chooser.setAcceptAllFileFilterUsed(false);
         chooser.showOpenDialog(this);
-        File file;
+        
 
         try {
-            file = chooser.getSelectedFile();
-            nombreDocLb.setText(file.getName());
+            setRaiz(chooser.getSelectedFile());
+            nombreDocLb.setText(getRaiz().getName());
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Archivo no cargado");
         }
