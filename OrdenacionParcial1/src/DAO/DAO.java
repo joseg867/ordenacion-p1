@@ -1,5 +1,6 @@
 package DAO;
 
+import java.util.StringTokenizer;
 import java.io.*;
 import javax.swing.JFileChooser;
 
@@ -8,53 +9,64 @@ import javax.swing.JFileChooser;
  * @author Noe
  */
 public class DAO {
-    
-    File raiz; //este es el archivo raiz del cual se dividira
 
-    public DAO(File raiz) {
-        this.raiz = raiz;
+    private File rootFile;
+    private int sizeArray;
+
+    public int getSizeArray() {
+        return sizeArray;
     }
 
-    public File getRaiz() {
-        return raiz;
+    public void setSizeArray(int sizeArray) {
+        this.sizeArray = sizeArray;
     }
 
-    public void setRaiz(File raiz) {
-        this.raiz = raiz;
+    public DAO() {
     }
-    
-    
 
-    public String leer() {
-        File f;
-        JFileChooser j = new JFileChooser();
-        j.showOpenDialog(j);
-        String lectura = null;
+    public String[] leer(File rootFile, int sizeArray) {
+
         try {
-            String path = j.getSelectedFile().getAbsolutePath();
-
-            lectura = "";
-            f = new File(path);
+            String path = rootFile.getAbsolutePath();
 
             try {
-                FileReader fr = new FileReader(f);
+                FileReader fr = new FileReader(rootFile);
                 BufferedReader br = new BufferedReader(fr);
                 String aux;
-
                 while ((aux = br.readLine()) != null) {
-                    lectura = lectura + aux + "\n";
+                    //lectura = lectura + aux + "\n";
+                    StringTokenizer st = new StringTokenizer(" ");
+                    String[] arreglo = new String[st.countTokens() + 1];
+
+                    while (st.hasMoreElements()) {
+                        arreglo[sizeArray] = st.nextToken();
+                        System.out.println(arreglo[sizeArray]);
+                        sizeArray++;
+
+                    }
+
                 }
             } catch (IOException e) {
             }
 
-            return lectura;
         } catch (NullPointerException e) {
             javax.swing.JOptionPane.showMessageDialog(null, e);
 
         }
-        return lectura;
+        return arreglo;
     }
-//    public String separapalabras (){
-//        
-//    }
+
+    /**
+     * @return the rootFile
+     */
+    public File getRootFile() {
+        return rootFile;
+    }
+
+    /**
+     * @param rootFile the rootFile to set
+     */
+    public void setRootFile(File rootFile) {
+        this.rootFile = rootFile;
+    }
 }
