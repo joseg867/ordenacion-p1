@@ -43,7 +43,7 @@ public class DAO {
         this.separado = separado;
     }
 
-    public String[] leer(File toRead) {
+    public ArrayList<String> leer(File toRead) {
         setPath(toRead.getAbsolutePath());
         String[] array = null;
         try {
@@ -51,12 +51,12 @@ public class DAO {
             BufferedReader bufer = new BufferedReader(reader);
             String aux;
             while ((aux = bufer.readLine()) != null) {
-                System.out.println(aux);
-                StringTokenizer tokenizer = new StringTokenizer(aux, " ");
+                //System.out.println(aux);
+                StringTokenizer tokenizer = new StringTokenizer(aux, " ,.;:¿?¡!()\"\"");
                 while (tokenizer.hasMoreTokens()) {
                     String tmp = tokenizer.nextToken();
                     if (tmp.length() > 3) {
-                        System.out.println(tmp);
+                        // System.out.println(tmp);
                         lista.add(tmp);
                     }
                 }
@@ -68,7 +68,7 @@ public class DAO {
             System.err.println(ex);
         }
 
-        return array;
+        return lista;
 
     }//fin de la clase leer
 
@@ -90,6 +90,15 @@ public class DAO {
         }
 
     }
+    
+    public String[] getArray(ArrayList<String> lista) {
+        String[] array = new String[lista.size()];
+        for(int i=0 ; i<lista.size();i++){
+            array[i]=lista.get(i);
+        }
+        
+        return array ;
+    }
 
     public static void main(String[] args) {
 //         TODO code application logic here
@@ -100,12 +109,18 @@ public class DAO {
         DAO dao = new DAO();
 
         try {
-            String[] hola = dao.leer(chooser.getSelectedFile());
+            //dao.leer(chooser.getSelectedFile());
+            
+            String[]Hola = dao.getArray(dao.leer(chooser.getSelectedFile()));
+            
+            for(int i = 0; i< Hola.length; i++){
+                System.out.println(Hola[i]);
+            }
 
             //dao.escribir(hola);
         } catch (Exception e) {
+        
         }
-
-
     }
+    
 }
