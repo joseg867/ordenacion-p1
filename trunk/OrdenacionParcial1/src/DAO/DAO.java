@@ -43,7 +43,7 @@ public class DAO {
         this.separado = separado;
     }
 
-    public ArrayList<String> leer(File toRead) {
+    public String[] leer(File toRead) {
         setPath(toRead.getAbsolutePath());
         String[] array = null;
         try {
@@ -68,18 +68,18 @@ public class DAO {
             System.err.println(ex);
         }
 
-        return lista;
+        return toArray(lista);
 
     }//fin de la clase leer
 
-    public void escribir(ArrayList<String> lista) {
+    public void escribir(String[] array) {
         this.separado = new File("separado.txt");
         try {
             FileWriter writer = new FileWriter(separado);
             PrintWriter bufer = new PrintWriter(writer);
 
             for (int i = 0; i < lista.size(); i++) {
-                bufer.println(lista.get(i));
+                bufer.println(array[i]);
             }
 
             bufer.close();
@@ -91,7 +91,7 @@ public class DAO {
 
     }
     
-    public String[] getArray(ArrayList<String> lista) {
+    private String[] toArray(ArrayList<String> lista) {
         String[] array = new String[lista.size()];
         for(int i=0 ; i<lista.size();i++){
             array[i]=lista.get(i);
@@ -111,7 +111,7 @@ public class DAO {
         try {
             //dao.leer(chooser.getSelectedFile());
             
-            String[]Hola = dao.getArray(dao.leer(chooser.getSelectedFile()));
+            String[]Hola = dao.leer(chooser.getSelectedFile());
             
             for(int i = 0; i< Hola.length; i++){
                 System.out.println(Hola[i]);
