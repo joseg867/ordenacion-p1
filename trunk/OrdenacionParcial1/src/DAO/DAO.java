@@ -1,7 +1,9 @@
 package DAO;
 
-import java.util.StringTokenizer;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+import javax.swing.JFileChooser;
 
 /**
  *
@@ -9,19 +11,20 @@ import java.io.*;
  */
 public class DAO {
 
-    private int sizeArray=0;
-    String path;
-    File separado;
+    private String path;
+    private File separado;
+    private ArrayList<String> lista;
 
     public DAO() {
+        lista = new ArrayList();
     }
 
-    public int getSizeArray() {
-        return sizeArray;
+    public ArrayList<String> getLista() {
+        return lista;
     }
 
-    public void setSizeArray(int sizeArray) {
-        this.sizeArray = sizeArray;
+    public void setLista(ArrayList<String> lista) {
+        this.lista = lista;
     }
 
     public String getPath() {
@@ -39,26 +42,23 @@ public class DAO {
     public void setSeparado(File separado) {
         this.separado = separado;
     }
-    
 
     public String[] leer(File toRead) {
-        this.path = toRead.getAbsolutePath();
+        setPath(toRead.getAbsolutePath());
         String[] array = null;
         try {
             FileReader reader = new FileReader(toRead);
             BufferedReader bufer = new BufferedReader(reader);
             String aux;
-            while (bufer.ready()) {
-                aux = bufer.readLine();
+            while ((aux = bufer.readLine()) != null) {
                 System.out.println(aux);
                 StringTokenizer tokenizer = new StringTokenizer(aux, " ");
                 while (tokenizer.hasMoreTokens()) {
-                    String tmp;
-                    if ((tmp=tokenizer.nextToken()).length()>3) {
+                    String tmp = tokenizer.nextToken();
+                    if (tmp.length() > 3) {
                         System.out.println(tmp);
-                        array[sizeArray] = tmp;
+                        lista.add(tmp);
                     }
-                    sizeArray++;
                 }
             }
             bufer.close();
@@ -67,30 +67,45 @@ public class DAO {
         } catch (Exception ex) {
             System.err.println(ex);
         }
-        
+
         return array;
 
     }//fin de la clase leer
-    
-    
-    public void escribir(String[] array){
-        this.separado= new File("separado.txt");
+
+    public void escribir(ArrayList<String> lista) {
+        this.separado = new File("separado.txt");
         try {
             FileWriter writer = new FileWriter(separado);
             PrintWriter bufer = new PrintWriter(writer);
-            
-            for(int i=0 ; i<array.length;i++){
-                bufer.println(array[i]);
+
+            for (int i = 0; i < lista.size(); i++) {
+                bufer.println(lista.get(i));
             }
-            
+
             bufer.close();
             writer.close();
-            
+
         } catch (Exception ex) {
             System.err.println(ex);
         }
-        
+
     }
-    
-    
+
+    public static void main(String[] args) {
+//         TODO code application logic here
+
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        chooser.setCurrentDirectory(new File("./"));
+        DAO dao = new DAO();
+
+        try {
+            String[] hola = dao.leer(chooser.getSelectedFile());
+
+            //dao.escribir(hola);
+        } catch (Exception e) {
+        }
+
+
+    }
 }
