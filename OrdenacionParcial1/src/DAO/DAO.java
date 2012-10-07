@@ -43,7 +43,7 @@ public class DAO {
         this.separado = separado;
     }
 
-    public String[] leer(File toRead) {
+    public ArrayList<String> leer(File toRead) {
         setPath(toRead.getAbsolutePath());
         String[] array = null;
         try {
@@ -68,7 +68,7 @@ public class DAO {
             System.err.println(ex);
         }
 
-        return toArray(lista);
+        return lista;
 
     }//fin de la clase leer
 
@@ -100,27 +100,27 @@ public class DAO {
         return array ;
     }
 
-    public static void main(String[] args) {
-//         TODO code application logic here
-
-        JFileChooser chooser = new JFileChooser();
-        chooser.showOpenDialog(null);
-        chooser.setCurrentDirectory(new File("./"));
-        DAO dao = new DAO();
-
-        try {
-            //dao.leer(chooser.getSelectedFile());
-            
-            String[]Hola = dao.leer(chooser.getSelectedFile());
-            
-            for(int i = 0; i< Hola.length; i++){
-                System.out.println(Hola[i]);
-            }
-
-            //dao.escribir(hola);
-        } catch (Exception e) {
-        
-        }
-    }
-    
+//    public static void main(String[] args) {
+////         TODO code application logic here
+//
+//        JFileChooser chooser = new JFileChooser();
+//        chooser.showOpenDialog(null);
+//        chooser.setCurrentDirectory(new File("./"));
+//        DAO dao = new DAO();
+//
+//        try {
+//            //dao.leer(chooser.getSelectedFile());
+//            
+//            String[]Hola = dao.leer(chooser.getSelectedFile());
+//            
+//            for(int i = 0; i< Hola.length; i++){
+//                System.out.println(Hola[i]);
+//            }
+//
+//            //dao.escribir(hola);
+//        } catch (Exception e) {
+//        
+//        }
+//    }
+//    
 }
