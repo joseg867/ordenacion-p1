@@ -36,7 +36,8 @@ public class testOrdenamientoInterno {
 		//ordenamiento.setPalabras(arreglo);
 		ordenamientoShell.setPalabras(arreglo);
 		//ordenamiento.burbujaMenor();
-		ordenamientoShell.shellSortSerieFrank();
+		//ordenamientoShell.shellSortSerieFrank();
+                ordenamientoShell.Shell_secCuadrados();
 		//ordenamientoShell.shellSortSeriePapernov();
 		//ordenamientoShell.shellSortSerieHibberd();
 		ordenamientoShell.imprimir();
