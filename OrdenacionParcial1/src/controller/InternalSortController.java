@@ -5,7 +5,7 @@
 package controller;
 
 import java.util.ArrayList;
-import model.domain.Internos.OrdenamientoInterno;
+import model.domain.internos.OrdenamientoInterno;
 import model.domain.internos.OrdenamientoShellSort;
 
 /**
@@ -14,19 +14,30 @@ import model.domain.internos.OrdenamientoShellSort;
  */
 public class InternalSortController {
 
-    String[] ejemplo = new String[20];//atributo que se debera modificar por el que el DAO recibe.
     
     //Verificar esto para pasarselo a los modelos
-    ArrayList<String> arreglo = new ArrayList<String>();
-    private OrdenamientoInterno ordenador = new OrdenamientoInterno();
-    private OrdenamientoShellSort ordenaShell =  new OrdenamientoShellSort();
+    private ArrayList<String> arregloList;
+    private OrdenamientoInterno ordenador;
+    private OrdenamientoShellSort ordenaShell;
 
     /**
      * Constructor.
      */
     public InternalSortController() {
+        ordenador =  new OrdenamientoInterno();
+        ordenaShell = new OrdenamientoShellSort();
         
     }
+
+    public ArrayList<String> getArregloList() {
+        return arregloList;
+    }
+
+    public void setArregloList(ArrayList<String> arregloList) {
+        this.arregloList = arregloList;
+    }
+    
+    
 
 
     /**
@@ -38,7 +49,7 @@ public class InternalSortController {
     public double getMilisInsercion() {
         double t0, t1;
         t0 = System.currentTimeMillis();
-        getOrdenador().insercion();
+        getOrdenador().insercion(getNewList());
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
@@ -52,7 +63,7 @@ public class InternalSortController {
     public double getMilisBurbujaMayor() {
         double t0, t1;
         t0 = System.currentTimeMillis();
-        getOrdenador().burbujaMayor();
+        getOrdenador().burbujaMayor(getNewList());
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
@@ -66,7 +77,7 @@ public class InternalSortController {
     public double getMilisBurbujaMenor() {
         double t0, t1;
         t0 = System.currentTimeMillis();
-        getOrdenador().burbujaMenor();
+        getOrdenador().burbujaMenor(getNewList());
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
@@ -74,7 +85,7 @@ public class InternalSortController {
     public double getMilisQuickSort() {
         double t0, t1;
         t0 = System.currentTimeMillis();
-        getOrdenador().QuikSort();
+        getOrdenador().QuikSort(getNewList());
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
@@ -82,11 +93,12 @@ public class InternalSortController {
     public double getMilisMergeSort() {
         double t0, t1;
         t0 = System.currentTimeMillis();
-        getOrdenador().ordenaMerge(arreglo);
+        getOrdenador().ordenaMerge(getNewList());
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
     
+    /*******************************************************************************************************************************/
 
     /**
      * Metodo para obtner el tiempo de duracion del proceso de ordenamiento de
@@ -96,6 +108,7 @@ public class InternalSortController {
      */
     public double getMilisShellSerieHibberd() {
         double t0, t1;
+        getOrdenaShell().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
         getOrdenaShell().shellSortSerieHibberd();
         t1 = System.currentTimeMillis() - t0;
@@ -104,6 +117,7 @@ public class InternalSortController {
     
     public double getMilisShellSeriePapernov() {
         double t0, t1;
+        getOrdenaShell().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
         getOrdenaShell().shellSortSeriePapernov();
         t1 = System.currentTimeMillis() - t0;
@@ -112,6 +126,7 @@ public class InternalSortController {
     
     public double getMilisShellIncrementoNormal() {
         double t0, t1;
+        getOrdenaShell().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
         getOrdenaShell().ShellSortIncremento2();
         t1 = System.currentTimeMillis() - t0;
@@ -120,11 +135,15 @@ public class InternalSortController {
     
     public double getMilisShellSerieFrank() {
         double t0, t1;
+        getOrdenaShell().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
         getOrdenaShell().shellSortSerieFrank();
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
+    
+    
+    /****************************************************************************************************************************/
 
     public OrdenamientoShellSort getOrdenaShell() {
         return ordenaShell;
@@ -147,4 +166,10 @@ public class InternalSortController {
     public void setOrdenador(OrdenamientoInterno ordenador) {
         this.ordenador = ordenador;
     }
+    
+    private ArrayList<String> getNewList(){
+        ArrayList<String> list = this.arregloList;
+        return list;
+    }
+    
 }//fin de la clase

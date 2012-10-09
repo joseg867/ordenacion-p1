@@ -5,7 +5,6 @@
 package model.domain.internos;
 
 import java.util.ArrayList;
-import model.domain.Internos.OrdenamientoInterno;
 
 /**
  *

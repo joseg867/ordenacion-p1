@@ -1,4 +1,4 @@
-package model.domain.Internos;
+package model.domain.internos;
 
 import java.util.ArrayList;
 
@@ -16,7 +16,7 @@ public class OrdenamientoInterno {
 
 	}
 
-	public void insercion() {
+	public void insercion(ArrayList<String> palabras) {
 		int i, k;
 		String aux;
 		for (i = 1; i < palabras.size(); i++) {
@@ -35,7 +35,7 @@ public class OrdenamientoInterno {
 		}
 	}
 
-	public void burbujaMenor() {
+	public void burbujaMenor(ArrayList<String> palabras) {
 		int i, j;
 		String aux;
 		for (i = 1; i < palabras.size(); i++) {
@@ -57,7 +57,7 @@ public class OrdenamientoInterno {
 	/**
 	 * Metodo de ordenamiento interno por burbuja mayor
 	 */
-	public void burbujaMayor() {
+	public void burbujaMayor(ArrayList<String> palabras) {
 		int i, j;
 		String aux;
 		for (i = 1; i < palabras.size(); i++) {
@@ -79,7 +79,7 @@ public class OrdenamientoInterno {
 	 * Metodo de ordenamiento interno quickSort que maneja el parseo de los
 	 * pivotes
 	 */
-	public void QuikSort() {
+	public void QuikSort(ArrayList<String> palabras) {
 		int ini, fin, pos;
 		ArrayList<Integer> pilaMenor = new ArrayList<Integer>(), pilaMayor = new ArrayList<Integer>();
 		pilaMenor.add(0);
@@ -198,7 +198,7 @@ public class OrdenamientoInterno {
 		return Lista;
 	}
 
-	public void imprimir() {
+	public void imprimir(ArrayList<String> palabras) {
 		for (int i = 0; i < palabras.size(); i++) {
 			System.out.println(palabras.get(i));
 
