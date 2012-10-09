@@ -52,7 +52,7 @@ public class DAO {
             String aux;
             while ((aux = bufer.readLine()) != null) {
                 //System.out.println(aux);
-                StringTokenizer tokenizer = new StringTokenizer(aux, " ,.;:¿?¡!()\"\"");
+                StringTokenizer tokenizer = new StringTokenizer(aux, " -_,.;:¿?¡!()\"\"");
                 while (tokenizer.hasMoreTokens()) {
                     String tmp = tokenizer.nextToken();
                     if (tmp.length() > 3) {
@@ -72,14 +72,14 @@ public class DAO {
 
     }//fin de la clase leer
 
-    public void escribir(String[] array) {
-        this.separado = new File("separado.txt");
+    public File escribir(ArrayList<String> array, String nameNew) {
+        this.separado = new File(nameNew + ".txt");
         try {
             FileWriter writer = new FileWriter(separado);
             PrintWriter bufer = new PrintWriter(writer);
 
             for (int i = 0; i < lista.size(); i++) {
-                bufer.println(array[i]);
+                bufer.println(array.get(i));
             }
 
             bufer.close();
@@ -88,7 +88,7 @@ public class DAO {
         } catch (Exception ex) {
             System.err.println(ex);
         }
-
+        return this.separado;
     }
     
     public String[] toArray(ArrayList<String> lista) {

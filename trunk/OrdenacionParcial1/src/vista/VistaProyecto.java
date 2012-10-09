@@ -17,8 +17,8 @@ import org.jvnet.substance.SubstanceLookAndFeel;
 public class VistaProyecto extends javax.swing.JFrame {
     
     //Atributos nuevos
-    File raiz;
-    ControllerDAO controlDao;
+    private File raiz, separado;
+    private ControllerDAO controlDao;
     
     public File getRaiz(){
         return this.raiz;
@@ -27,6 +27,15 @@ public class VistaProyecto extends javax.swing.JFrame {
     public void setRaiz(File raiz){
         this.raiz = raiz;
     }
+
+    public File getSeparado() {
+        return separado;
+    }
+
+    public void setSeparado(File separado) {
+        this.separado = separado;
+    }
+    
 
     /**
      * Creates new form VistaProyecto
@@ -428,7 +437,8 @@ public class VistaProyecto extends javax.swing.JFrame {
         try {
             setRaiz(chooser.getSelectedFile());
             nombreDocLb.setText(getRaiz().getName());
-            //controlDao
+            separado = controlDao.writeFile(controlDao.readFile(getRaiz()), "separado");
+            JOptionPane.showMessageDialog(this, "¡Archivo cargado y separado con exito!");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Archivo no cargado");
         }
