@@ -14,7 +14,6 @@ import model.domain.internos.OrdenamientoShellSort;
  */
 public class InternalSortController {
 
-    
     //Verificar esto para pasarselo a los modelos
     private ArrayList<String> arregloList;
     private OrdenamientoInterno ordenador;
@@ -24,9 +23,9 @@ public class InternalSortController {
      * Constructor.
      */
     public InternalSortController() {
-        ordenador =  new OrdenamientoInterno();
+        ordenador = new OrdenamientoInterno();
         ordenaShell = new OrdenamientoShellSort();
-        
+
     }
 
     public ArrayList<String> getArregloList() {
@@ -36,9 +35,6 @@ public class InternalSortController {
     public void setArregloList(ArrayList<String> arregloList) {
         this.arregloList = arregloList;
     }
-    
-    
-
 
     /**
      * Metodo para obtner el tiempo de duracion del proceso de ordenamiento de
@@ -81,7 +77,7 @@ public class InternalSortController {
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
-    
+
     public double getMilisQuickSort() {
         double t0, t1;
         t0 = System.currentTimeMillis();
@@ -89,7 +85,7 @@ public class InternalSortController {
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
-    
+
     public double getMilisMergeSort() {
         double t0, t1;
         t0 = System.currentTimeMillis();
@@ -97,9 +93,10 @@ public class InternalSortController {
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
-    
-    /*******************************************************************************************************************************/
 
+    /**
+     * ****************************************************************************************************************************
+     */
     /**
      * Metodo para obtner el tiempo de duracion del proceso de ordenamiento de
      * Shellsort
@@ -114,7 +111,7 @@ public class InternalSortController {
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
-    
+
     public double getMilisShellSeriePapernov() {
         double t0, t1;
         getOrdenaShell().setPalabras(getNewList());
@@ -123,7 +120,7 @@ public class InternalSortController {
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
-    
+
     public double getMilisShellIncrementoNormal() {
         double t0, t1;
         getOrdenaShell().setPalabras(getNewList());
@@ -132,7 +129,7 @@ public class InternalSortController {
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
-    
+
     public double getMilisShellSerieFrank() {
         double t0, t1;
         getOrdenaShell().setPalabras(getNewList());
@@ -141,10 +138,10 @@ public class InternalSortController {
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
-    
-    
-    /****************************************************************************************************************************/
 
+    /**
+     * *************************************************************************************************************************
+     */
     public OrdenamientoShellSort getOrdenaShell() {
         return ordenaShell;
     }
@@ -166,10 +163,9 @@ public class InternalSortController {
     public void setOrdenador(OrdenamientoInterno ordenador) {
         this.ordenador = ordenador;
     }
-    
-    private ArrayList<String> getNewList(){
+
+    private ArrayList<String> getNewList() {
         ArrayList<String> list = this.arregloList;
         return list;
     }
-    
 }//fin de la clase
