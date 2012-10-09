@@ -4,7 +4,7 @@
  */
 package vista;
 
-import controller.ControlFilter;
+import controller.*;
 import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -18,6 +18,7 @@ public class VistaProyecto extends javax.swing.JFrame {
     
     //Atributos nuevos
     File raiz;
+    ControllerDAO controlDao;
     
     public File getRaiz(){
         return this.raiz;
@@ -34,6 +35,7 @@ public class VistaProyecto extends javax.swing.JFrame {
 
         initComponents();
         nombreDocLb.setText("");
+        controlDao = new ControllerDAO();
     }
 
     /**
@@ -426,6 +428,7 @@ public class VistaProyecto extends javax.swing.JFrame {
         try {
             setRaiz(chooser.getSelectedFile());
             nombreDocLb.setText(getRaiz().getName());
+            controlDao
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Archivo no cargado");
         }
