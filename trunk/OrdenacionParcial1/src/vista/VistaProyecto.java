@@ -428,7 +428,7 @@ public class VistaProyecto extends javax.swing.JFrame {
         try {
             setRaiz(chooser.getSelectedFile());
             nombreDocLb.setText(getRaiz().getName());
-            controlDao
+            //controlDao
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Archivo no cargado");
         }
