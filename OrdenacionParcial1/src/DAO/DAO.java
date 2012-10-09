@@ -91,7 +91,7 @@ public class DAO {
 
     }
     
-    private String[] toArray(ArrayList<String> lista) {
+    public String[] toArray(ArrayList<String> lista) {
         String[] array = new String[lista.size()];
         for(int i=0 ; i<lista.size();i++){
             array[i]=lista.get(i);
