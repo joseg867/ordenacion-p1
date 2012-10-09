@@ -50,7 +50,6 @@ public class VistaProyecto extends javax.swing.JFrame {
         Panel = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         ordenarBtn = new javax.swing.JButton();
-        mostrarBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -61,7 +60,6 @@ public class VistaProyecto extends javax.swing.JFrame {
         algoritmoBar5 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         ordenarShellBtn = new javax.swing.JButton();
-        mostarShellBtn = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         shellsortBtn1 = new javax.swing.JButton();
         shellsortBtn2 = new javax.swing.JButton();
@@ -74,7 +72,6 @@ public class VistaProyecto extends javax.swing.JFrame {
         algoritmoEx2 = new javax.swing.JButton();
         algoritmoEx3 = new javax.swing.JButton();
         ordenarExBtn = new javax.swing.JButton();
-        mostrarExBtn = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         cargarArchivoBtn = new javax.swing.JButton();
@@ -97,8 +94,6 @@ public class VistaProyecto extends javax.swing.JFrame {
         Panel.setName("JTabbedPane");
 
         ordenarBtn.setText("Ordenar");
-
-        mostrarBtn.setText("Mostar");
 
         jLabel1.setText("T.Max");
 
@@ -140,20 +135,16 @@ public class VistaProyecto extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(ordenarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(mostrarBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(710, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 129, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2)
                     .addComponent(jLabel1))
                 .addGap(627, 627, 627))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(35, 35, 35)
+                .addComponent(ordenarBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -167,11 +158,9 @@ public class VistaProyecto extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addGap(81, 81, 81)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
                         .addComponent(ordenarBtn)
-                        .addGap(35, 35, 35)
-                        .addComponent(mostrarBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
+                        .addGap(108, 108, 108)
                         .addComponent(jLabel2)
                         .addGap(24, 24, 24))))
         );
@@ -179,8 +168,6 @@ public class VistaProyecto extends javax.swing.JFrame {
         Panel.addTab("Interno", jPanel1);
 
         ordenarShellBtn.setText("Ordenar");
-
-        mostarShellBtn.setText("Mostar");
 
         jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -216,20 +203,16 @@ public class VistaProyecto extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(mostarShellBtn)
-                    .addComponent(ordenarShellBtn))
-                .addContainerGap(690, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 137, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
                     .addComponent(jLabel7))
                 .addGap(619, 619, 619))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(46, 46, 46)
+                .addComponent(ordenarShellBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -243,11 +226,9 @@ public class VistaProyecto extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel7)
-                        .addGap(67, 67, 67)
+                        .addGap(121, 121, 121)
                         .addComponent(ordenarShellBtn)
-                        .addGap(67, 67, 67)
-                        .addComponent(mostarShellBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
                         .addComponent(jLabel8)
                         .addGap(23, 23, 23))))
         );
@@ -284,8 +265,6 @@ public class VistaProyecto extends javax.swing.JFrame {
 
         ordenarExBtn.setText("Ordenar");
 
-        mostrarExBtn.setText("Mostrar");
-
         jLabel4.setText("T.Max");
 
         jLabel5.setText("T.Min");
@@ -297,18 +276,16 @@ public class VistaProyecto extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ordenarExBtn)
-                            .addComponent(mostrarExBtn))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(149, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel5)
-                                .addGap(4, 4, 4)))))
+                                .addGap(4, 4, 4))))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(ordenarExBtn)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -323,11 +300,9 @@ public class VistaProyecto extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel4)
-                        .addGap(63, 63, 63)
+                        .addGap(119, 119, 119)
                         .addComponent(ordenarExBtn)
-                        .addGap(50, 50, 50)
-                        .addComponent(mostrarExBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
                         .addComponent(jLabel5)
                         .addGap(20, 20, 20))))
         );
@@ -520,9 +495,6 @@ public class VistaProyecto extends javax.swing.JFrame {
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu jPopupMenu2;
     private javax.swing.JMenuItem licenciaMenu;
-    private javax.swing.JButton mostarShellBtn;
-    private javax.swing.JButton mostrarBtn;
-    private javax.swing.JButton mostrarExBtn;
     private javax.swing.JLabel nombreDocLb;
     private javax.swing.JButton ordenarBtn;
     private javax.swing.JButton ordenarExBtn;
