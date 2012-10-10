@@ -9,6 +9,7 @@ import java.nio.channels.FileChannel;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.stream.FileImageOutputStream;
+import javax.swing.JFileChooser;
 import model.domain.externos.MezclaDirecta;
 import model.domain.externos.MezclaEquilibrada;
 
@@ -19,7 +20,7 @@ import model.domain.externos.MezclaEquilibrada;
 public class ExternalSortController {
     
 
-    private File Origen;
+    private File origen;
     private MezclaDirecta mezclaDirecta = new MezclaDirecta();
     private MezclaEquilibrada mezclaEquilibrada = new MezclaEquilibrada();
     private static final String ARCHIVOORIGEN = "F.txt", AUXILIAR1 = "F1.txt", AUXILIAR2 = "F2.txt",AUXILIAR3 = "F3" ;
@@ -29,11 +30,11 @@ public class ExternalSortController {
     }
 
     public File getOrigen() {
-        return Origen;
+        return origen;
     }
 
     public void setOrigen(File Origen) {
-        this.Origen = Origen;
+        this.origen = Origen;
     }
 
     
@@ -74,7 +75,6 @@ public class ExternalSortController {
     public double getMilisMezclaDirecta() {
         double t0 = 0, t1 = 0;
         try {
-
             t0 = System.currentTimeMillis();
             getMezclaDirecta().MezclaDirecta("separado.txt", AUXILIAR1, AUXILIAR2);
             t1 = System.currentTimeMillis() - t0;
@@ -90,7 +90,7 @@ public class ExternalSortController {
         try {
             
             t0 = System.currentTimeMillis();
-            getMezclaEquilibrada().mezclaequilibrada(getCopyFile(Origen), AUXILIAR1, AUXILIAR2, AUXILIAR3);  
+            getMezclaEquilibrada().mezclaequilibrada(getCopyFile(origen), AUXILIAR1, AUXILIAR2, AUXILIAR3);  
             t1 = System.currentTimeMillis()- t0;
             
             
@@ -105,11 +105,11 @@ public class ExternalSortController {
         try {
             FileChannel in = (new FileInputStream(separado)).getChannel();
             FileChannel out = (new FileOutputStream(copySeparado)).getChannel();
-            in.transferTo(0,separado.length(), out);
+            in.transferTo(0, separado.length(), out);
             in.close();
             out.close();
         } catch (Exception ex) {
-            Logger.getLogger(ExternalSortController.class.getName()).log(Level.SEVERE, null, ex);
+            System.err.println(ex);
         }
         
         return copySeparado.getName();
