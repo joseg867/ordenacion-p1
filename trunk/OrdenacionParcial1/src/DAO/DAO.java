@@ -15,34 +15,66 @@ public class DAO {
     private File separado;
     private ArrayList<String> lista;
 
+    /**
+     * Metodo que crea un ArrayList
+     */
     public DAO() {
         lista = new ArrayList();
     }
 
+    /**
+     * Metodo que obtiene los valores a la lista
+     * @return lista
+     */
     public ArrayList<String> getLista() {
         return lista;
     }
 
+    /**
+     * Metodo que inicializa los valores de la lista
+     * @param lista
+     */
     public void setLista(ArrayList<String> lista) {
         this.lista = lista;
     }
 
+    /**
+     * Metodo que obtiene la ruta del archivo
+     * @return path
+     */
     public String getPath() {
         return path;
     }
 
+    /**
+     * Metodo que asigna la direccion del archivo
+     * @param path
+     */
     public void setPath(String path) {
         this.path = path;
     }
 
+    /**
+     *
+     * @return
+     */
     public File getSeparado() {
         return separado;
     }
 
+    /**
+     *
+     * @param separado
+     */
     public void setSeparado(File separado) {
         this.separado = separado;
     }
 
+    /**
+     * Metodo que lee un archivo 
+     * @param toRead
+     * @return lista
+     */
     public ArrayList<String> leer(File toRead) {
         setPath(toRead.getAbsolutePath());
         String[] array = null;
@@ -72,6 +104,12 @@ public class DAO {
 
     }//fin de la clase leer
 
+    /**
+     * Metodo que crea un archivo .txt
+     * @param array
+     * @param nameNew
+     * @return this.separado
+     */
     public File escribir(ArrayList<String> array, String nameNew) {
         this.separado = new File(nameNew + ".txt");
         try {
@@ -91,6 +129,11 @@ public class DAO {
         return this.separado;
     }
     
+    /**
+     * Metodo pone los Strings del archivo en un array
+     * @param lista
+     * @return array
+     */
     public String[] toArray(ArrayList<String> lista) {
         String[] array = new String[lista.size()];
         for(int i=0 ; i<lista.size();i++){

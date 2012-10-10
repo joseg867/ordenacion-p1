@@ -14,10 +14,18 @@ public class OrdenamientoShellSort {
 
     private ArrayList<String> palabras;
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<String> getPalabras() {
         return palabras;
     }
 
+    /**
+     *
+     * @param palabras
+     */
     public void setPalabras(ArrayList<String> palabras) {
         this.palabras = palabras;
     }
@@ -138,6 +146,9 @@ public class OrdenamientoShellSort {
     /**
      * metodo de ordenamiento shell sort con secuencias de la serie de frank
      */
+    /**
+     *
+     */
     public void ShellSortIncremento2() {
         int b, i;
         String aux;
@@ -152,7 +163,7 @@ public class OrdenamientoShellSort {
                 while ((i + b) < (palabras.size())) {
 
 
-                    if (palabras.get(i).toString().toLowerCase().compareTo(palabras.get(i + b).toString().toLowerCase()) > 0) {
+                    if (palabras.get(i).toLowerCase().compareTo(palabras.get(i + b).toString().toLowerCase()) > 0) {
                         aux = palabras.get(i);
 
                         palabras.set(i, palabras.get(i + b));
@@ -167,6 +178,9 @@ public class OrdenamientoShellSort {
         }
     }
 
+    /**
+     *
+     */
     public void imprimir() {
         for (int i = 0; i < palabras.size(); i++) {
             System.out.println(palabras.get(i));

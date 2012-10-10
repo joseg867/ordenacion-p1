@@ -18,17 +18,32 @@ public class ExternalSortController {
         private MezclaDirecta mezcla = new MezclaDirecta();
     private static final String F = "F.txt", F1 = "F1.txt", F2 = "F3.txt";
 
+    /**
+     *
+     * @return
+     */
     public MezclaDirecta getMezcla() {
         return mezcla;
     }
 
+    /**
+     *
+     * @param mezcla
+     */
     public void setMezcla(MezclaDirecta mezcla) {
         this.mezcla = mezcla;
     }
 
+    /**
+     *
+     */
     public ExternalSortController() {
     }
 
+    /**
+     *
+     * @return
+     */
     public double getMilisMezclaDirecta() {
         double t0 = 0, t1 = 0;
         try {

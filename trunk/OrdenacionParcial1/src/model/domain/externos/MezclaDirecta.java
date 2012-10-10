@@ -18,6 +18,13 @@ import java.util.Scanner;
  */
 public class MezclaDirecta {
     
+    /**
+     *
+     * @param F
+     * @param F1
+     * @param F2
+     * @throws IOException
+     */
     public void MezclaDirecta(String F, String F1, String F2) throws IOException {
 	        int part = 1, n = 0;
 	        n = numeroElementos(F);
@@ -28,7 +35,15 @@ public class MezclaDirecta {
 	        }
 	    }
 
-	    public void particiona(String F, String F1, String F2, int part) throws IOException {
+	    /**
+     *
+     * @param F
+     * @param F1
+     * @param F2
+     * @param part
+     * @throws IOException
+     */
+    public void particiona(String F, String F1, String F2, int part) throws IOException {
 	        int k, l;
 	        String line = "";
 	        //abre el archivo F para lectura.
@@ -69,7 +84,15 @@ public class MezclaDirecta {
 	        pwf2.close();
 	    }
 
-	    public void fusiona(String F, String F1, String F2, int part) throws IOException {
+	    /**
+     *
+     * @param F
+     * @param F1
+     * @param F2
+     * @param part
+     * @throws IOException
+     */
+    public void fusiona(String F, String F1, String F2, int part) throws IOException {
 	        //abrir el archivo F1 yF2 de lectura
 	        //abrir el archivo F de escritura
 
@@ -192,7 +215,12 @@ public class MezclaDirecta {
 	    }//Fin de metodo Fusiona
 
 	//Terminar el codigo para que devuelva el numero de elementos que tiene el archivo
-	    public int numeroElementos(String F) {
+	    /**
+     *
+     * @param F
+     * @return
+     */
+    public int numeroElementos(String F) {
 	        int elementos = 0;
 	        int cuantos = 0;
 	        Scanner fileIn;
