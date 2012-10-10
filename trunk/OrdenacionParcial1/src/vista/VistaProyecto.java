@@ -348,6 +348,7 @@ public class VistaProyecto extends javax.swing.JFrame {
         graficador.setData(controlInterno.getMilisQuickSort(), "Milisegundos", "Quicksort");
         graficador.drawGraphics();
         
+        
     }//GEN-LAST:event_ordenarInternoBtnActionPerformed
 
     private void ordenarShellBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarShellBtnActionPerformed

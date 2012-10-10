@@ -53,7 +53,7 @@ public class InternalSortController {
     public double getMilisInsercion() {
         double t0, t1;
         t0 = System.currentTimeMillis();
-        getOrdenador().insercion(getNewList());
+        getOrdenador().insercion();
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
@@ -67,7 +67,7 @@ public class InternalSortController {
     public double getMilisBurbujaMayor() {
         double t0, t1;
         t0 = System.currentTimeMillis();
-        getOrdenador().burbujaMayor(getNewList());
+        getOrdenador().burbujaMayor();
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
@@ -81,7 +81,7 @@ public class InternalSortController {
     public double getMilisBurbujaMenor() {
         double t0, t1;
         t0 = System.currentTimeMillis();
-        getOrdenador().burbujaMenor(getNewList());
+        getOrdenador().burbujaMenor();
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
@@ -93,7 +93,7 @@ public class InternalSortController {
     public double getMilisQuickSort() {
         double t0, t1;
         t0 = System.currentTimeMillis();
-        getOrdenador().QuikSort(getNewList());
+        getOrdenador().QuikSort();
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
