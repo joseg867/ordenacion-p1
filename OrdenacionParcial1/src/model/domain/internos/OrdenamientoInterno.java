@@ -2,21 +2,37 @@ package model.domain.internos;
 
 import java.util.ArrayList;
 
+/**
+ *
+ * @author Noe
+ */
 public class OrdenamientoInterno {
 
 	private ArrayList<String> palabras;
 
-	public ArrayList<String> getPalabras() {
+	/**
+     *
+     * @return
+     */
+    public ArrayList<String> getPalabras() {
 		return palabras;
 	}
 
-	public void setPalabras(ArrayList<String> palabras) {
+	/**
+     *
+     * @param palabras
+     */
+    public void setPalabras(ArrayList<String> palabras) {
 
 		this.palabras = palabras;
 
 	}
 
-	public void insercion(ArrayList<String> palabras) {
+	/**
+     *
+     * @param palabras
+     */
+    public void insercion(ArrayList<String> palabras) {
 		int i, k;
 		String aux;
 		for (i = 1; i < palabras.size(); i++) {
@@ -35,7 +51,11 @@ public class OrdenamientoInterno {
 		}
 	}
 
-	public void burbujaMenor(ArrayList<String> palabras) {
+	/**
+     *
+     * @param palabras
+     */
+    public void burbujaMenor(ArrayList<String> palabras) {
 		int i, j;
 		String aux;
 		for (i = 1; i < palabras.size(); i++) {
@@ -56,7 +76,9 @@ public class OrdenamientoInterno {
 
 	/**
 	 * Metodo de ordenamiento interno por burbuja mayor
-	 */
+         * 
+         * @param palabras 
+         */
 	public void burbujaMayor(ArrayList<String> palabras) {
 		int i, j;
 		String aux;
@@ -78,7 +100,9 @@ public class OrdenamientoInterno {
 	/**
 	 * Metodo de ordenamiento interno quickSort que maneja el parseo de los
 	 * pivotes
-	 */
+         * 
+         * @param palabras 
+         */
 	public void QuikSort(ArrayList<String> palabras) {
 		int ini, fin, pos;
 		ArrayList<Integer> pilaMenor = new ArrayList<>(), pilaMayor = new ArrayList<>();
@@ -155,7 +179,12 @@ public class OrdenamientoInterno {
 		return pos;
 	}
 
-	public ArrayList<String> ordenaMerge(ArrayList<String> L) {
+	/**
+     *
+     * @param L
+     * @return
+     */
+    public ArrayList<String> ordenaMerge(ArrayList<String> L) {
 		int n = L.size(), i, m;
 		ArrayList<String> L1 = new ArrayList<>(), L2 = new ArrayList<>();
 		if (n > 1) {
@@ -172,7 +201,13 @@ public class OrdenamientoInterno {
 
 	}
 
-	public ArrayList<String> Merge(ArrayList<String> L1, ArrayList<String> L2) {
+	/**
+     *
+     * @param L1
+     * @param L2
+     * @return
+     */
+    public ArrayList<String> Merge(ArrayList<String> L1, ArrayList<String> L2) {
 
 		ArrayList<String> Lista = new ArrayList<>();
 		while ((!L1.isEmpty()) && (!L2.isEmpty())) {
@@ -198,7 +233,11 @@ public class OrdenamientoInterno {
 		return Lista;
 	}
 
-	public void imprimir(ArrayList<String> palabras) {
+	/**
+     *
+     * @param palabras
+     */
+    public void imprimir(ArrayList<String> palabras) {
 		for (int i = 0; i < palabras.size(); i++) {
 			System.out.println(palabras.get(i));
 

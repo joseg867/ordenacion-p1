@@ -113,7 +113,9 @@ public class MezclaEquilibrada {
     }
 
     public static void particionfusion(String FA, String FB, String FC, String FD) throws IOException {
-        String R1 = new String(),R2 = new String(), Aux = new String();
+        String R1= new String();
+        String R2 = new String();
+        String Aux = new String();
         boolean B, DELE1, DELE2;
 
         FileReader frFA = new FileReader(FA);
@@ -181,11 +183,11 @@ public class MezclaEquilibrada {
 
             //if (R1!=0 || R2!=0){ 
             if (R1.toLowerCase().compareTo(R2.toLowerCase()) < 0) {
-                if (R1.toLowerCase().compareTo(Aux.toLowerCase()) >0 || R1.toLowerCase().compareTo(Aux.toLowerCase()) ==0) {
+                if (R1.toLowerCase().compareTo(Aux.toLowerCase()) >= 0 ) {
                     Aux = ayuda1(Aux, R1, FC, FD, B);
                     DELE1 = true;
                 } else {
-                    if (R2.toLowerCase().compareTo(Aux.toLowerCase()) >0 || R2.toLowerCase().compareTo(Aux.toLowerCase()) ==0) {
+                    if (R2.toLowerCase().compareTo(Aux.toLowerCase()) >= 0 ) {
                         Aux = ayuda1(Aux, R2, FC, FD, B);
                         DELE2 = true;
                     } else {
@@ -195,11 +197,11 @@ public class MezclaEquilibrada {
                     }
                 }
             } else {
-                if (R2.toLowerCase().compareTo(Aux.toLowerCase()) >0 || R2.toLowerCase().compareTo(Aux.toLowerCase()) ==0) {
+                if (R2.toLowerCase().compareTo(Aux.toLowerCase()) >=0) {
                     Aux = ayuda1(Aux, R2, FC, FD, B);
                     DELE2 = true;
                 } else {
-                    if (R1.toLowerCase().compareTo(Aux.toLowerCase()) >0 || R1.toLowerCase().compareTo(Aux.toLowerCase()) ==0) {
+                    if (R1.toLowerCase().compareTo(Aux.toLowerCase()) >=0) {
                         Aux = ayuda1(Aux, R1, FC, FD, B);
                         DELE1 = true;
                     } else {
@@ -294,14 +296,14 @@ public class MezclaEquilibrada {
         BufferedReader brF = new BufferedReader(frF);
         String inLine = String.valueOf(R), inLineF = "dsa";
 
-        if (R.toLowerCase().compareTo(Aux.toLowerCase()) >0 ||R.toLowerCase().compareTo(Aux.toLowerCase()) == 0) {
+        if (R.toLowerCase().compareTo(Aux.toLowerCase()) >=0) {
             Aux = ayuda1(Aux, R, FC, FD, B);
         } else {
             Aux = ayuda2(Aux, R, FC, FD, B);
             B = cambiob(B);
         }
         //System.out.println("inL: "+inLine+" inF:"+inLineF);
-        while (inLineF.compareToIgnoreCase(inLine) != 0) {
+        while (inLineF.compareTo(inLine) != 0) {
             inLineF = brF.readLine();
         }
 
@@ -311,7 +313,7 @@ public class MezclaEquilibrada {
             inLineF = brF.readLine();
             if (inLineF != null) {
                 R = inLineF;
-                if (R.toLowerCase().compareTo(Aux.toLowerCase()) >0 ||R.toLowerCase().compareTo(Aux.toLowerCase()) == 0) {
+                if (R.toLowerCase().compareTo(Aux.toLowerCase()) >=0) {
                     Aux = ayuda1(Aux, R, FC, FD, B);
                 } else {
                     Aux = ayuda2(Aux, R, FC, FD, B);

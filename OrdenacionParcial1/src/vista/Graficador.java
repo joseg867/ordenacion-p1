@@ -4,6 +4,7 @@
  */
 package vista;
 
+import controller.InternalSortController;
 import java.awt.Rectangle;
 import javax.swing.JPanel;
 import org.jfree.chart.ChartFactory;
@@ -76,5 +77,13 @@ public class Graficador {
 //        g.drawGraphics();
 //    }
     
-    
+    public static void main(String[] args) {
+        InternalSortController controlInterno = new InternalSortController();
+        Graficador graf= new Graficador("Ordenacion Interna","Algoritmos de Ordenacion Interna","Milisegundos");
+        graf.setData(controlInterno.getMilisInsercion(), "", "");
+        graf.drawGraphics();
+        
+        
+        
+    }
 }//fin de Graficador

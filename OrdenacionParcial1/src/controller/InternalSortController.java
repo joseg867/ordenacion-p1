@@ -28,10 +28,18 @@ public class InternalSortController {
 
     }
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<String> getArregloList() {
         return arregloList;
     }
 
+    /**
+     *
+     * @param arregloList
+     */
     public void setArregloList(ArrayList<String> arregloList) {
         this.arregloList = arregloList;
     }
@@ -78,6 +86,10 @@ public class InternalSortController {
         return t1;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getMilisQuickSort() {
         double t0, t1;
         t0 = System.currentTimeMillis();
@@ -86,6 +98,10 @@ public class InternalSortController {
         return t1;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getMilisMergeSort() {
         double t0, t1;
         t0 = System.currentTimeMillis();
@@ -112,6 +128,10 @@ public class InternalSortController {
         return t1;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getMilisShellSeriePapernov() {
         double t0, t1;
         getOrdenaShell().setPalabras(getNewList());
@@ -121,6 +141,10 @@ public class InternalSortController {
         return t1;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getMilisShellIncrementoNormal() {
         double t0, t1;
         getOrdenaShell().setPalabras(getNewList());
@@ -130,6 +154,10 @@ public class InternalSortController {
         return t1;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getMilisShellSerieFrank() {
         double t0, t1;
         getOrdenaShell().setPalabras(getNewList());
@@ -141,11 +169,16 @@ public class InternalSortController {
 
     /**
      * *************************************************************************************************************************
+     * @return 
      */
     public OrdenamientoShellSort getOrdenaShell() {
         return ordenaShell;
     }
 
+    /**
+     *
+     * @param ordenaShell
+     */
     public void setOrdenaShell(OrdenamientoShellSort ordenaShell) {
         this.ordenaShell = ordenaShell;
     }

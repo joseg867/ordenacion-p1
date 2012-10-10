@@ -12,6 +12,8 @@ public class Licencia extends javax.swing.JDialog {
 
     /**
      * Creates new form Licencia
+     * @param parent
+     * @param modal  
      */
     public Licencia(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
