@@ -93,20 +93,12 @@ public class VistaProyecto extends javax.swing.JFrame {
         externoPanel = new javax.swing.JPanel();
         ordenarExternoBtn = new javax.swing.JButton();
         cargarArchivoBtn = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         nombreDocLb = new javax.swing.JLabel();
         cargadoLb = new javax.swing.JLabel();
-        cerrarBtn = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        salirMenu = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        licenciaMenu = new javax.swing.JMenuItem();
+        aboutBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Algoritmos de Ordenacion");
-        setPreferredSize(new java.awt.Dimension(600, 480));
         setResizable(false);
 
         TabPane.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
@@ -114,6 +106,7 @@ public class VistaProyecto extends javax.swing.JFrame {
 
         ordenarInternoBtn.setFont(new java.awt.Font("Cantarell", 0, 24)); // NOI18N
         ordenarInternoBtn.setText("Ordenar");
+        ordenarInternoBtn.setToolTipText("Presione para ordenar.");
         ordenarInternoBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ordenarInternoBtnActionPerformed(evt);
@@ -125,22 +118,23 @@ public class VistaProyecto extends javax.swing.JFrame {
         internoPanelLayout.setHorizontalGroup(
             internoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(internoPanelLayout.createSequentialGroup()
-                .addGap(139, 139, 139)
+                .addContainerGap()
                 .addComponent(ordenarInternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(146, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
         internoPanelLayout.setVerticalGroup(
             internoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(internoPanelLayout.createSequentialGroup()
-                .addGap(105, 105, 105)
+                .addContainerGap()
                 .addComponent(ordenarInternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         TabPane.addTab("Interno", internoPanel);
 
         ordenarShellBtn.setFont(new java.awt.Font("Cantarell", 0, 24)); // NOI18N
         ordenarShellBtn.setText("Ordenar");
+        ordenarShellBtn.setToolTipText("Presione para ordenar");
         ordenarShellBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ordenarShellBtnActionPerformed(evt);
@@ -152,24 +146,25 @@ public class VistaProyecto extends javax.swing.JFrame {
         shellPanelLayout.setHorizontalGroup(
             shellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(shellPanelLayout.createSequentialGroup()
-                .addGap(138, 138, 138)
+                .addContainerGap()
                 .addComponent(ordenarShellBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
         shellPanelLayout.setVerticalGroup(
             shellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(shellPanelLayout.createSequentialGroup()
-                .addGap(95, 95, 95)
+                .addContainerGap()
                 .addComponent(ordenarShellBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         TabPane.addTab("Shellsort", shellPanel);
 
-        externoPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        externoPanel.setBorder(null);
 
         ordenarExternoBtn.setFont(new java.awt.Font("Cantarell", 0, 24)); // NOI18N
         ordenarExternoBtn.setText("Ordenar");
+        ordenarExternoBtn.setToolTipText("Presione para ordenar");
         ordenarExternoBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ordenarExternoBtnActionPerformed(evt);
@@ -181,16 +176,16 @@ public class VistaProyecto extends javax.swing.JFrame {
         externoPanelLayout.setHorizontalGroup(
             externoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(externoPanelLayout.createSequentialGroup()
-                .addGap(136, 136, 136)
+                .addContainerGap()
                 .addComponent(ordenarExternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
         externoPanelLayout.setVerticalGroup(
             externoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(externoPanelLayout.createSequentialGroup()
-                .addGap(94, 94, 94)
+                .addContainerGap()
                 .addComponent(ordenarExternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(112, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         TabPane.addTab("Externo", externoPanel);
@@ -204,96 +199,57 @@ public class VistaProyecto extends javax.swing.JFrame {
             }
         });
 
-        nombreDocLb.setText("NombreDocumento:");
-
         cargadoLb.setText("Archivo Cargado:");
 
-        cerrarBtn.setText("Cerrar");
-        cerrarBtn.addActionListener(new java.awt.event.ActionListener() {
+        aboutBtn.setText("About");
+        aboutBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cerrarBtnActionPerformed(evt);
+                aboutBtnActionPerformed(evt);
             }
         });
-
-        jMenu1.setText("File");
-
-        salirMenu.setText("Salir");
-        salirMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                salirMenuActionPerformed(evt);
-            }
-        });
-        jMenu1.add(salirMenu);
-
-        jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
-
-        jMenu3.setText("About");
-
-        licenciaMenu.setText("Licencia");
-        licenciaMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                licenciaMenuActionPerformed(evt);
-            }
-        });
-        jMenu3.add(licenciaMenu);
-
-        jMenuBar1.add(jMenu3);
-
-        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(cargarArchivoBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cargadoLb)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(nombreDocLb))
-                    .addComponent(TabPane, javax.swing.GroupLayout.PREFERRED_SIZE, 442, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(338, 338, 338)
-                .addComponent(jLabel3)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cerrarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(329, 329, 329))
+                        .addContainerGap()
+                        .addComponent(TabPane, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(nombreDocLb, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cargadoLb)
+                            .addComponent(cargarArchivoBtn)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(aboutBtn)))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(398, 398, 398))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(cargarArchivoBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(cargadoLb, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(nombreDocLb, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-                    .addComponent(cargarArchivoBtn))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(nombreDocLb, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(TabPane, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(cerrarBtn)
-                .addGap(74, 74, 74))
+                .addComponent(TabPane, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(aboutBtn)
+                .addGap(4, 4, 4))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void licenciaMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_licenciaMenuActionPerformed
-        // TODO add your handling code here:
-        Licencia licencia = new Licencia(this, true);
-        licencia.setVisible(true);
-
-    }//GEN-LAST:event_licenciaMenuActionPerformed
 
     private void cargarArchivoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cargarArchivoBtnActionPerformed
         // TODO add your handling code here:
@@ -312,25 +268,13 @@ public class VistaProyecto extends javax.swing.JFrame {
             this.lista = controlDao.readFile(getRaiz());
             controlInterno.setArregloList(lista);
             this.separado = controlDao.writeFile(lista, "separado");
+            controlExterno.setOrigen(separado);
             JOptionPane.showMessageDialog(this, "¡Archivo cargado y separado con exito!");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Archivo no cargado");
         }
 
     }//GEN-LAST:event_cargarArchivoBtnActionPerformed
-
-    private void salirMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirMenuActionPerformed
-        // TODO add your handling code here:
-
-        System.exit(0);
-
-    }//GEN-LAST:event_salirMenuActionPerformed
-
-    private void cerrarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarBtnActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
-
-    }//GEN-LAST:event_cerrarBtnActionPerformed
 
     private void ordenarInternoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarInternoBtnActionPerformed
         // TODO add your handling code here:
@@ -360,7 +304,16 @@ public class VistaProyecto extends javax.swing.JFrame {
     private void ordenarExternoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarExternoBtnActionPerformed
         // TODO add your handling code here:
         Graficador graficador = new Graficador("Ordenacion Externa","Algortimos de Ordenacion Externa","Milisegundos");
+        graficador.setData(controlExterno.getMilisMezclaDirecta(), "Milisegundos", "Mezcla Directa");
+        graficador.setData(controlExterno.getMilisMezclaEquilibrada(), "Milisegundos", "Mezcla Equilibrada");
+        graficador.drawGraphics();
     }//GEN-LAST:event_ordenarExternoBtnActionPerformed
+
+    private void aboutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutBtnActionPerformed
+        // TODO add your handling code here:
+        Licencia licencia = new Licencia(this,true);
+        licencia.setVisible(true);
+    }//GEN-LAST:event_aboutBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -382,24 +335,17 @@ public class VistaProyecto extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane TabPane;
+    private javax.swing.JButton aboutBtn;
     private javax.swing.JLabel cargadoLb;
     private javax.swing.JButton cargarArchivoBtn;
-    private javax.swing.JButton cerrarBtn;
     private javax.swing.JPanel externoPanel;
     private javax.swing.JPanel internoPanel;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu jPopupMenu2;
-    private javax.swing.JMenuItem licenciaMenu;
     private javax.swing.JLabel nombreDocLb;
     private javax.swing.JButton ordenarExternoBtn;
     private javax.swing.JButton ordenarInternoBtn;
     private javax.swing.JButton ordenarShellBtn;
-    private javax.swing.JMenuItem salirMenu;
     private javax.swing.JPanel shellPanel;
     // End of variables declaration//GEN-END:variables
     

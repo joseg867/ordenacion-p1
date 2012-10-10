@@ -9,6 +9,11 @@ import java.io.*;
  */
 public class MezclaEquilibrada {
 
+    public MezclaEquilibrada() {
+    }
+    
+    
+
     public static void elemen(String F) throws IOException {
         FileReader fr = new FileReader(F);
         BufferedReader br = new BufferedReader(fr);
@@ -32,7 +37,7 @@ public class MezclaEquilibrada {
         return !b;
     }
 
-    public static void mezclaequilibrada(String F, String F1, String F2, String F3) throws IOException {
+    public void mezclaequilibrada(String F, String F1, String F2, String F3) throws IOException {
         particioninicial(F, F2, F3);
         String inLineF1 = " sd";
         String inLineF3 = "asd";
@@ -323,17 +328,6 @@ public class MezclaEquilibrada {
         //System.out.println("----Fin ayuda3");
     }
 
-    public static void main(String args[]) {
-
-        String F = "F.txt", F1 = "F1.txt", F2 = "F2.txt", F3 = "F3.txt";
-
-        try {
-            mezclaequilibrada(F, F1, F2, F3);
-            //particioninicial(F,F2,F3);
-            //particionfusion(F2,F3,F,F1);
-        } catch (IOException e) {
-        }
-
-    }
+    
     
 }
