@@ -52,6 +52,7 @@ public class InternalSortController {
      */
     public double getMilisInsercion() {
         double t0, t1;
+        getOrdenador().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
         getOrdenador().insercion();
         t1 = System.currentTimeMillis() - t0;
@@ -66,6 +67,7 @@ public class InternalSortController {
      */
     public double getMilisBurbujaMayor() {
         double t0, t1;
+        getOrdenador().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
         getOrdenador().burbujaMayor();
         t1 = System.currentTimeMillis() - t0;
@@ -80,6 +82,7 @@ public class InternalSortController {
      */
     public double getMilisBurbujaMenor() {
         double t0, t1;
+        getOrdenador().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
         getOrdenador().burbujaMenor();
         t1 = System.currentTimeMillis() - t0;
@@ -92,6 +95,7 @@ public class InternalSortController {
      */
     public double getMilisQuickSort() {
         double t0, t1;
+        getOrdenador().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
         getOrdenador().QuikSort();
         t1 = System.currentTimeMillis() - t0;
@@ -104,6 +108,7 @@ public class InternalSortController {
      */
     public double getMilisMergeSort() {
         double t0, t1;
+        getOrdenador().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
         getOrdenador().ordenaMerge(getNewList());
         t1 = System.currentTimeMillis() - t0;
@@ -201,4 +206,6 @@ public class InternalSortController {
         ArrayList<String> list = this.arregloList;
         return list;
     }
+    
+    
 }//fin de la clase
