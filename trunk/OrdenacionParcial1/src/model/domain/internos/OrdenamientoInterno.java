@@ -24,7 +24,7 @@ public class OrdenamientoInterno {
 			aux = palabras.get(i);
 			k = i - 1;
 
-			while (k >= 0 && aux.toString().toLowerCase().compareTo(palabras.get(k).toString().toLowerCase()) < 0) {
+			while (k >= 0 && aux.toLowerCase().compareTo(palabras.get(k).toLowerCase()) < 0) {
 
 				palabras.set(k + 1, palabras.get(k));
 
@@ -42,7 +42,7 @@ public class OrdenamientoInterno {
 			for (j = palabras.size() - 1; j >= i; j--) {
 				
 				
-				if (palabras.get(j - 1).toString().toLowerCase().compareTo(palabras.get(j).toString().toLowerCase()) > 0) {
+				if (palabras.get(j - 1).toLowerCase().compareTo(palabras.get(j).toLowerCase()) > 0) {
 					aux = palabras.get(j - 1);
 
 					palabras.set(j - 1, palabras.get(j));
@@ -63,7 +63,7 @@ public class OrdenamientoInterno {
 		for (i = 1; i < palabras.size(); i++) {
 			for (j = 0; j < palabras.size() - i; j++) {
 
-				if (palabras.get(j).toString().toLowerCase().compareTo(palabras.get(j + 1).toString().toLowerCase()) > 0) {
+				if (palabras.get(j).toLowerCase().compareTo(palabras.get(j + 1).toLowerCase()) > 0) {
 					aux = palabras.get(j + 1);
 
 					palabras.set(j + 1, palabras.get(j));
@@ -81,7 +81,7 @@ public class OrdenamientoInterno {
 	 */
 	public void QuikSort(ArrayList<String> palabras) {
 		int ini, fin, pos;
-		ArrayList<Integer> pilaMenor = new ArrayList<Integer>(), pilaMayor = new ArrayList<Integer>();
+		ArrayList<Integer> pilaMenor = new ArrayList<>(), pilaMayor = new ArrayList<>();
 		pilaMenor.add(0);
 		pilaMayor.add(palabras.size() - 1);
 
@@ -120,7 +120,7 @@ public class OrdenamientoInterno {
 		band = true;
 		while (band) {
 
-			while (palabras.get(pos).toString().toLowerCase().compareTo(palabras.get(der).toString().toLowerCase()) <= 0
+			while (palabras.get(pos).toLowerCase().compareTo(palabras.get(der).toLowerCase()) <= 0
 					&& pos != der) {
 				der--;
 			}
@@ -134,7 +134,7 @@ public class OrdenamientoInterno {
 
 				palabras.set(der, aux);
 				pos = der;
-				while (palabras.get(pos).toString().toLowerCase().compareTo(palabras.get(izq).toString().toLowerCase()) >= 0
+				while (palabras.get(pos).toLowerCase().compareTo(palabras.get(izq).toLowerCase()) >= 0
 						&& pos != izq) {
 					izq++;
 				}
@@ -157,7 +157,7 @@ public class OrdenamientoInterno {
 
 	public ArrayList<String> ordenaMerge(ArrayList<String> L) {
 		int n = L.size(), i, m;
-		ArrayList<String> L1 = new ArrayList<String>(), L2 = new ArrayList<String>();
+		ArrayList<String> L1 = new ArrayList<>(), L2 = new ArrayList<>();
 		if (n > 1) {
 			m = n / 2;
 			for (i = 0; i < m; i++)
@@ -174,10 +174,10 @@ public class OrdenamientoInterno {
 
 	public ArrayList<String> Merge(ArrayList<String> L1, ArrayList<String> L2) {
 
-		ArrayList<String> Lista = new ArrayList<String>();
+		ArrayList<String> Lista = new ArrayList<>();
 		while ((!L1.isEmpty()) && (!L2.isEmpty())) {
 
-			if (L1.get(0).toString().toLowerCase().compareTo(L2.get(0).toString().toLowerCase()) < 0) {
+			if (L1.get(0).toLowerCase().compareTo(L2.get(0).toLowerCase()) < 0) {
 				Lista.add(L1.get(0));
 				L1.remove(0);
 				if (L1.isEmpty()) {

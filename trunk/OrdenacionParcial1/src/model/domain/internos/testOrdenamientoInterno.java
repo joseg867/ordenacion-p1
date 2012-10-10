@@ -5,6 +5,7 @@
 package model.domain.internos;
 
 import java.util.ArrayList;
+//import model.domain.Internos.OrdenamientoInterno;
 
 /**
  *
@@ -16,7 +17,7 @@ public class testOrdenamientoInterno {
 		OrdenamientoInterno ordenamiento = new OrdenamientoInterno();
 		OrdenamientoShellSort ordenamientoShell =  new OrdenamientoShellSort();
 
-		ArrayList<String> arreglo = new ArrayList<String>();
+		ArrayList<String> arreglo = new ArrayList<>();
 		arreglo.add("Arandi");
 		arreglo.add("Lopez");
 		arreglo.add("alonzo");
@@ -33,13 +34,14 @@ public class testOrdenamientoInterno {
 		
 		
 		//ordenamiento.setPalabras(arreglo);
-		ordenamientoShell.setPalabras(arreglo);
+                //ordenamiento.insercion(arreglo);
+                //ordenamiento.imprimir(arreglo);
+		//ordenamientoShell.setPalabras(arreglo);
 		//ordenamiento.burbujaMenor();
-		//ordenamientoShell.shellSortSerieFrank();
-                ordenamientoShell.Shell_secCuadrados();
-		//ordenamientoShell.shellSortSeriePapernov();
-		//ordenamientoShell.shellSortSerieHibberd();
-		ordenamientoShell.imprimir();
+		//ordenamientoShell.ShellSortPapernov();
+                //ordenamientoShell.ShellSortHibbard();
+                //ordenamientoShell.ShellSortFrank();
+		//ordenamientoShell.imprimir();
 		 //ordenamiento.burbujaMayor();
 		// ordenamiento.burbujaMenor();
 		// ordenamiento.ShellSort();
