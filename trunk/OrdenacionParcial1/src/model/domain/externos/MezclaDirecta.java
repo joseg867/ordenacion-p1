@@ -110,7 +110,7 @@ public class MezclaDirecta {
 
 	            while ((k < part) && (b1 == false) && (l < part) && (b2 == false)) {
 	            	
-	                if (line1.compareTo(line2)<0) {
+	                if (line1.toLowerCase().compareTo(line2.toLowerCase())<0) {
 	                    if (line1 != null) {
 	                        pwr.println(line1);
 	                    }
