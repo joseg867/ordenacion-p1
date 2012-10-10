@@ -32,7 +32,7 @@ public class OrdenamientoInterno {
      *
      * @param palabras
      */
-    public void insercion(ArrayList<String> palabras) {
+    public void insercion() {
 		int i, k;
 		String aux;
 		for (i = 1; i < palabras.size(); i++) {
@@ -55,7 +55,7 @@ public class OrdenamientoInterno {
      *
      * @param palabras
      */
-    public void burbujaMenor(ArrayList<String> palabras) {
+    public void burbujaMenor() {
 		int i, j;
 		String aux;
 		for (i = 1; i < palabras.size(); i++) {
@@ -79,7 +79,7 @@ public class OrdenamientoInterno {
          * 
          * @param palabras 
          */
-	public void burbujaMayor(ArrayList<String> palabras) {
+	public void burbujaMayor() {
 		int i, j;
 		String aux;
 		for (i = 1; i < palabras.size(); i++) {
@@ -103,7 +103,7 @@ public class OrdenamientoInterno {
          * 
          * @param palabras 
          */
-	public void QuikSort(ArrayList<String> palabras) {
+	public void QuikSort() {
 		int ini, fin, pos;
 		ArrayList<Integer> pilaMenor = new ArrayList<>(), pilaMayor = new ArrayList<>();
 		pilaMenor.add(0);
