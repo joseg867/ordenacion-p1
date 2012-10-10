@@ -107,7 +107,7 @@ public class InternalSortController {
         double t0, t1;
         getOrdenaShell().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
-        getOrdenaShell().shellSortSerieHibberd();
+        getOrdenaShell().ShellSortHibbard();
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
@@ -116,7 +116,7 @@ public class InternalSortController {
         double t0, t1;
         getOrdenaShell().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
-        getOrdenaShell().shellSortSeriePapernov();
+        getOrdenaShell().ShellSortPapernov();
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
@@ -134,7 +134,7 @@ public class InternalSortController {
         double t0, t1;
         getOrdenaShell().setPalabras(getNewList());
         t0 = System.currentTimeMillis();
-        getOrdenaShell().shellSortSerieFrank();
+        getOrdenaShell().ShellSortFrank();
         t1 = System.currentTimeMillis() - t0;
         return t1;
     }
