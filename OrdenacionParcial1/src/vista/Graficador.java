@@ -70,20 +70,6 @@ public class Graficador {
         frame.setVisible(true);
     }
     
-//    public static void main(String[] args) {
-//        Graficador g = new Graficador("Graficador","Cosas","Tiempo");
-//        g.setData(1.5, "Segundos", "Cosa1");
-//        g.setData(5.4, "Segundos", "Cosa2");
-//        g.drawGraphics();
-//    }
+
     
-    public static void main(String[] args) {
-        InternalSortController controlInterno = new InternalSortController();
-        Graficador graf= new Graficador("Ordenacion Interna","Algoritmos de Ordenacion Interna","Milisegundos");
-        graf.setData(controlInterno.getMilisInsercion(), "", "");
-        graf.drawGraphics();
-        
-        
-        
-    }
 }//fin de Graficador
