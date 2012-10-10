@@ -8,7 +8,8 @@ import java.io.*;
  * @author Gustavo Canul
  */
 public class MezclaEquilibrada {
-public static void elemen(String F) throws IOException {
+
+    public static void elemen(String F) throws IOException {
         FileReader fr = new FileReader(F);
         BufferedReader br = new BufferedReader(fr);
 
