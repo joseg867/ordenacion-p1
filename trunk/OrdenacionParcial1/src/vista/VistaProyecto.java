@@ -67,6 +67,7 @@ public class VistaProyecto extends javax.swing.JFrame {
         
         initComponents();
         nombreDocLb.setText("         ");
+        cargadoLb.setText("No se ha cargado ningun archivo ");
         controlDao = new ControllerDAO();
         controlInterno = new InternalSortController();
         controlExterno = new ExternalSortController();
@@ -94,7 +95,7 @@ public class VistaProyecto extends javax.swing.JFrame {
         cargarArchivoBtn = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         nombreDocLb = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        cargadoLb = new javax.swing.JLabel();
         cerrarBtn = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -126,14 +127,14 @@ public class VistaProyecto extends javax.swing.JFrame {
             .addGroup(internoPanelLayout.createSequentialGroup()
                 .addGap(139, 139, 139)
                 .addComponent(ordenarInternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(153, Short.MAX_VALUE))
+                .addContainerGap(146, Short.MAX_VALUE))
         );
         internoPanelLayout.setVerticalGroup(
             internoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(internoPanelLayout.createSequentialGroup()
                 .addGap(105, 105, 105)
                 .addComponent(ordenarInternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
 
         TabPane.addTab("Interno", internoPanel);
@@ -153,14 +154,14 @@ public class VistaProyecto extends javax.swing.JFrame {
             .addGroup(shellPanelLayout.createSequentialGroup()
                 .addGap(138, 138, 138)
                 .addComponent(ordenarShellBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(154, Short.MAX_VALUE))
+                .addContainerGap(147, Short.MAX_VALUE))
         );
         shellPanelLayout.setVerticalGroup(
             shellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(shellPanelLayout.createSequentialGroup()
                 .addGap(95, 95, 95)
                 .addComponent(ordenarShellBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
         TabPane.addTab("Shellsort", shellPanel);
@@ -182,14 +183,14 @@ public class VistaProyecto extends javax.swing.JFrame {
             .addGroup(externoPanelLayout.createSequentialGroup()
                 .addGap(136, 136, 136)
                 .addComponent(ordenarExternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(154, Short.MAX_VALUE))
+                .addContainerGap(147, Short.MAX_VALUE))
         );
         externoPanelLayout.setVerticalGroup(
             externoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(externoPanelLayout.createSequentialGroup()
                 .addGap(94, 94, 94)
                 .addComponent(ordenarExternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(126, Short.MAX_VALUE))
+                .addContainerGap(112, Short.MAX_VALUE))
         );
 
         TabPane.addTab("Externo", externoPanel);
@@ -205,7 +206,7 @@ public class VistaProyecto extends javax.swing.JFrame {
 
         nombreDocLb.setText("NombreDocumento:");
 
-        jLabel9.setText("Archivo Cargado:");
+        cargadoLb.setText("Archivo Cargado:");
 
         cerrarBtn.setText("Cerrar");
         cerrarBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -253,7 +254,7 @@ public class VistaProyecto extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(cargarArchivoBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel9)
+                        .addComponent(cargadoLb)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(nombreDocLb))
                     .addComponent(TabPane, javax.swing.GroupLayout.PREFERRED_SIZE, 442, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -267,28 +268,21 @@ public class VistaProyecto extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel3)
-                        .addGap(398, 398, 398))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(5, 5, 5)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(nombreDocLb, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(cargarArchivoBtn)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TabPane, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
-                        .addComponent(cerrarBtn)
-                        .addGap(74, 74, 74))))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(398, 398, 398))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cargadoLb, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(nombreDocLb, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+                    .addComponent(cargarArchivoBtn))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(TabPane, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(cerrarBtn)
+                .addGap(74, 74, 74))
         );
 
         pack();
@@ -313,6 +307,7 @@ public class VistaProyecto extends javax.swing.JFrame {
         chooser.showOpenDialog(this);
         try {
             setRaiz(chooser.getSelectedFile());
+            cargadoLb.setText("Archivo Cargado: ");
             nombreDocLb.setText(getRaiz().getName());
             this.lista = controlDao.readFile(getRaiz());
             controlInterno.setArregloList(lista);
@@ -355,6 +350,11 @@ public class VistaProyecto extends javax.swing.JFrame {
         // TODO add your handling code here:
         Graficador graficador;
         graficador = new Graficador("Ordenacion por Shellsort","Algoritmos de Shellsort","Milisegundos");
+        graficador.setData(controlInterno.getMilisShellIncrementoNormal(), "Milisegundos", "Incremento Normal");
+        graficador.setData(controlInterno.getMilisShellSerieFrank(), "Milisegundos", "Serie de Frank");
+        graficador.setData(controlInterno.getMilisShellSerieHibberd(), "Milisegundos", "Serie de Hibberd");
+        graficador.setData(controlInterno.getMilisShellSeriePapernov(), "Milisegundos", "Serie de Papernov");
+        graficador.drawGraphics();
     }//GEN-LAST:event_ordenarShellBtnActionPerformed
 
     private void ordenarExternoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarExternoBtnActionPerformed
@@ -382,12 +382,12 @@ public class VistaProyecto extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane TabPane;
+    private javax.swing.JLabel cargadoLb;
     private javax.swing.JButton cargarArchivoBtn;
     private javax.swing.JButton cerrarBtn;
     private javax.swing.JPanel externoPanel;
     private javax.swing.JPanel internoPanel;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
