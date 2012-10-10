@@ -107,7 +107,7 @@ gran
 parte
 debido
 �xito
-U-Play
+Play
 pod�a
 tener
 grupo
@@ -236,7 +236,8 @@ temprano
 Tengo
 trabajo
 hacer
-holo-habitaci�n
+holo
+habitaci�n
 trabaje
 demasiado
 duro
@@ -310,7 +311,6 @@ simplemente
 cerrar
 esta
 noche
--Muy
 bien
 Estoy
 aqu�
@@ -421,7 +421,7 @@ para
 hab�a
 dado
 incipiente
-U-Play
+Play
 verdadero
 comienzo
 olvid�
@@ -435,7 +435,8 @@ directamente
 tercer
 piso
 seguridad
-holo-habitaci�n
+holo
+habitaci�n
 requer�a
 huella
 digital
@@ -535,7 +536,7 @@ compa�eros
 hab�an
 construido
 solos
-U-Play
+Play
 friki
 entend�a
 bien
@@ -557,7 +558,7 @@ sino
 negocio
 juegos
 �xito
-U-Play
+Play
 todo
 amigos
 compa�eros
@@ -812,7 +813,7 @@ flechas
 para
 desviar
 filo
-espada�-o
+espada�
 fuese
 Cualquier
 golpe
@@ -1208,13 +1209,14 @@ V�ctima
 Bart
 Minnock
 hombre
-U-Play
+Play
 �Juegos
-U-Play
+Play
 se�or
 compa��a
 computadores
-holo-juegos
+holo
+juegos
 novia
 encontr�
 esta
@@ -1236,7 +1238,8 @@ lleg�
 aqu�
 estaba
 encerrado
-holo-habitaci�n
+holo
+habitaci�n
 consigui�
 droide
 abriera
@@ -1687,7 +1690,7 @@ corri�
 treinta
 minutos
 Necesitamos
-e-equipo
+equipo
 barrenderos
 aqu�
 Quiero
@@ -2036,7 +2039,8 @@ modos
 ella
 dijo
 estaba
-holo-habitaci�n
+holo
+habitaci�n
 totalmente
 asegurado
 comunicaciones
@@ -2187,7 +2191,7 @@ playa
 porque
 siempre
 quisieron
-U-Play
+Play
 avanz�
 Dios
 Dios
@@ -2398,7 +2402,8 @@ confirma
 hizo
 Ella
 tiene
-auto-despertador
+auto
+despertador
 para
 Nueva
 activa
@@ -2454,7 +2459,7 @@ exhaustiva
 programaci�n
 Vamos
 acerca
-U-Play
+Play
 consigues
 tres
 niveles
@@ -2491,7 +2496,8 @@ pas�
 all�
 droide
 meti�
-holo-habitaci�n
+holo
+habitaci�n
 dejar
 rastro
 perceptible
@@ -2512,9 +2518,10 @@ prioridad
 sacar
 disco
 unidad
-holo-habitaci�n
+holo
+habitaci�n
 ejecutarlo
-e-equipo
+equipo
 est�
 camino
 tambi�n
@@ -2543,7 +2550,7 @@ luego
 vamos
 hacer
 visita
-U-Play
+Play
 Ella
 tom�
 unos
@@ -2618,7 +2625,7 @@ est�ndar
 Bueno
 ten�a
 dinero
-U-Play
+Play
 empresa
 fuerte
 joven
@@ -2670,7 +2677,7 @@ cerebro�
 cuerpo
 Minnock
 cerebro
-U-Play
+Play
 parecer
 r�pido
 crecimiento
@@ -2751,7 +2758,7 @@ sino
 maldito
 abuelo
 embargo
-e-frikis
+frikis
 siempre
 eran
 ni�os
@@ -2847,8 +2854,8 @@ Este
 lugar
 catedral
 todo
-E-juego
--dijo
+juego
+dijo
 McNab
 Estoy
 segura
@@ -2857,7 +2864,8 @@ aqu�
 estar�a
 encantado
 aprobaci�n
-Holo-habitaci�n
+Holo
+habitaci�n
 tercer
 piso
 dirigi�
@@ -3019,8 +3027,9 @@ acuerdo
 novia
 mide
 aproximadamente
-cinco-dos
-cien-diez
+cinco
+cien
+diez
 completamente
 vestida
 Ella
@@ -3036,7 +3045,8 @@ mejorara
 encontrado
 nada
 refiera
-auto-terminaci�n
+auto
+terminaci�n
 pero
 teor�a
 l�gica
@@ -3102,7 +3112,6 @@ droide
 reprograme
 mismo
 vanguardia
-�ja-ja�
 acuerdo
 Peabody
 pero
@@ -3320,20 +3329,20 @@ subi�
 esta
 ma�ana
 inteligente
-e-friki
+friki
 emplea
 trabaja
 conoce
 otros
 inteligentes
-e-frikis
+frikis
 Vamos
 averiguar
 qui�n
 gustaba
 viejo
 Bart
-U-Play
+Play
 desarrollaba
 extend�a
 antiguo
@@ -3399,7 +3408,7 @@ parec�a
 todos
 hablan
 incomprensible
-e-taquigraf�a
+taquigraf�a
 mientras
 operaban
 computadoras
@@ -3412,7 +3421,7 @@ inteligentes
 sorb�an
 variedad
 botellas
-go-bebidas
+bebidas
 como
 Zeus
 pens�
@@ -3624,7 +3633,7 @@ imagen
 ella
 hab�a
 decidi�
-U-Play
+Play
 realidad
 s�ptimo
 c�rculo
@@ -3634,7 +3643,7 @@ Benny
 haciendo
 cabriolas
 t�picas
-e-friki
+friki
 mientras
 gritaba
 t�rminos
@@ -3874,7 +3883,6 @@ asesinado
 ayer
 tarde
 casa
-Nuh-uh
 negaci�n
 infantil
 lleg�
@@ -4414,12 +4422,13 @@ unos
 treinta
 a�os
 vistiendo
-maxi-cargas
+maxi
+cargas
 favorec�a
 McNab
 ojos
 color
-caqui-
+caqui
 pero
 zapatillas
 bien
@@ -4523,7 +4532,7 @@ necesario
 pagar
 fianza
 Si�ntate
--murmur�
+murmur�
 Cill
 �Por
 �Qu�
@@ -4588,7 +4597,8 @@ CeeCee
 Rove
 esta
 ma�ana
-holo-habitaci�n
+holo
+habitaci�n
 Hab�a
 sido
 decapitado
@@ -4631,7 +4641,8 @@ Bart
 correcto
 parecer
 estaba
-holo-habitaci�n
+holo
+habitaci�n
 momento
 ataque
 ten�a
@@ -4642,7 +4653,8 @@ est�
 trabajando
 retirar
 disco
-holo-unidad
+holo
+unidad
 tener
 verificar
 paradero
@@ -5137,7 +5149,7 @@ todos
 logotipo
 Se�al�
 logo
-U-Play
+Play
 pantalla
 Hab�a
 venido
@@ -5198,7 +5210,7 @@ codificado
 desarrollo
 dir�a
 versi�n
-U-Play
+Play
 tiene
 derechos
 autor
@@ -5408,7 +5420,7 @@ cara
 buscando
 punto
 d�bil
-e-equipo
+equipo
 departamento
 pasar�
 cada
@@ -5544,7 +5556,8 @@ correcto
 copia
 disco
 Fant�stico
-holo-unidad
+holo
+unidad
 est�
 tiene
 estar
@@ -5618,10 +5631,12 @@ registro
 pero
 entusiasm�
 �Qu�
-holo-juego
+holo
+juego
 interactivo
 fantas�a
-Multi-funci�n
+Multi
+funci�n
 continu�
 Benny
 jugador
@@ -5851,7 +5866,7 @@ explosi�n
 vacaciones
 Cuando
 salga
-U-Play
+Play
 nubes
 Bart
 quer�a
@@ -5949,14 +5964,15 @@ disco
 desarrollo�
 autodestruy�
 cuando
-e-equipo
+equipo
 trat�
 sacarlo
 serio
 Benny
 parpade�
 Bien
-siento-dijo
+siento
+dijo
 instante
 siento
 s�lo
@@ -6269,7 +6285,7 @@ Cuando
 enlace
 son�
 dijo
-e-equipo
+equipo
 hab�a
 llegado
 equipo
@@ -6428,7 +6444,7 @@ responder
 ella
 pod�a
 dejarle
-e-mail
+mail
 Pero
 rostro
 parpade�
@@ -6537,7 +6553,7 @@ est�
 involucrado
 �D�nde
 est�s
-U-Play
+Play
 aterrizar
 unos
 veinte
@@ -6606,7 +6622,7 @@ pantalla
 blanco
 enlace
 s�lo
-e-trabajo
+trabajo
 sino
 negocio
 Feeney
@@ -6665,7 +6681,8 @@ herida
 grave
 brazo
 todas
-peri-mortem
+peri
+mortem
 cabeza
 cortada
 solo
@@ -6762,7 +6779,8 @@ v�ctima
 segura
 sola
 propia
-holo-habitaci�n
+holo
+habitaci�n
 decapitado
 espada
 potencialmente
@@ -6809,7 +6827,7 @@ pero
 �cu�n
 dif�cil
 para
-e-friki
+friki
 deslizarse
 trav�s
 seguridad
@@ -6850,7 +6868,7 @@ incluso
 tiempo
 limpieza
 Alguien
-U-Play
+Play
 alguien
 afuera
 hab�a
@@ -6933,7 +6951,7 @@ pod�a
 estar
 quieto
 pero
-e-atletas
+atletas
 eran
 notoriamente
 nerviosos
@@ -6948,7 +6966,7 @@ ella
 Pero
 duro
 algunos
-e-juego
+juego
 ten�an
 limitadas
 habilidades
@@ -7143,7 +7161,6 @@ superior
 Nosotros
 estamos
 juntos
-Uh-huh
 Ella
 sac�
 comenz�
@@ -7272,13 +7289,13 @@ Seguro
 mencionaste
 pareja
 entiende
-e-trabajo
+trabajo
 serio
 raro
 estado
 preso
 veces
-e-robo
+robo
 estado
 eres
 idiota
@@ -7340,7 +7357,8 @@ c�nyuge
 COHAB
 pero
 conexi�n
-Chadwick-Dubrosky
+Chadwick
+Dubrosky
 parec�a
 mejor
 �ngulo
@@ -7496,7 +7514,7 @@ cosa
 dem�s
 imagino
 bien
-e-trabajo
+trabajo
 fuerte
 visto
 algunos
@@ -8650,7 +8668,7 @@ Chadwick
 Trabaja
 para
 Bart
-U-Play
+Play
 lleg�
 poco
 despu�s
@@ -8804,7 +8822,8 @@ oops
 Podr�as
 decir
 estoy
-semi-viviendo
+semi
+viviendo
 tambi�n
 tambi�n
 desconoce
@@ -8850,7 +8869,7 @@ porque
 Roland
 trabajaba
 para
-U-Play
+Play
 Parec�a
 buen
 tipo
@@ -8863,7 +8882,7 @@ pobre
 diablo
 Usted
 experto
-e-trabajo
+trabajo
 tambi�n
 afici�n
 verdad
@@ -8991,7 +9010,7 @@ tienes
 piezas
 laterales
 inclinaci�n
-e-espionaje
+espionaje
 ilegal
 usted
 reparta
@@ -9786,7 +9805,6 @@ entr�
 luego
 cerr�
 puerta
-Uh-oh
 simplemente
 prefiero
 difundir
@@ -10043,7 +10061,7 @@ ser�a
 prohibitivo
 arque�
 cejas
--Bueno
+Bueno
 coraz�n
 hincha
 orgullo
@@ -10177,7 +10195,7 @@ pero
 constante
 Algo
 como
-U-Play
+Play
 Fant�stico
 cambiar
 swing
@@ -10255,7 +10273,6 @@ vida
 sonri�
 mayor�a
 gusta
-Uh-huh
 Entonces
 cuando
 hayan
@@ -10311,7 +10328,7 @@ pasar
 escena
 Quiero
 informada
-e-trabajo
+trabajo
 har�
 pero
 quiero
@@ -10372,7 +10389,6 @@ amigo
 darme
 descanso
 todo
-Woo-hoo
 Aqu�
 vamos
 nuevo
@@ -11216,7 +11232,7 @@ contra
 multitud
 puesta
 l�nea
-U-Play
+Play
 ten�a
 gran
 presencia
@@ -11299,7 +11315,8 @@ jugamos
 �Qui�n
 lleg�
 reina
-holo-juegos
+holo
+juegos
 tambi�n
 pero
 como
@@ -11414,7 +11431,9 @@ hab�a
 sido
 idea
 dise�ador
-post-post-moderno
+post
+post
+moderno
 ciudad
 imagin�
 hab�a
@@ -11530,7 +11549,7 @@ Este
 lugar
 est�
 protegido
-Secure-One
+Secure
 error
 identificaci�n
 alertar�
@@ -11785,7 +11804,8 @@ hab�a
 visto
 alguna
 sala
-hiper-moderna
+hiper
+moderna
 menos
 c�moda
 pero
@@ -11793,7 +11813,7 @@ pudo
 recordar
 ninguna
 Esperen
-aqu�-
+aqu�
 orden�
 Derby
 Cuando
@@ -11877,7 +11897,8 @@ sonido
 pasos
 hombre
 �por
-clic-clic
+clic
+clic
 �los
 tacos
 mujer
@@ -12069,7 +12090,7 @@ Parec�a
 joven
 brillante
 afable
--Entonces
+Entonces
 �por
 alguien
 mat�
@@ -12185,7 +12206,7 @@ p�blicos
 Usted
 funcionario
 p�blico
--Pregunt�
+Pregunt�
 correcto
 todos
 modos
@@ -12230,7 +12251,7 @@ creo
 gustar�a
 martini
 noche
--Claro
+Claro
 cari�o
 decirle
 Derby
@@ -12270,7 +12291,7 @@ confidencial
 sobre
 funcionamiento
 proyectos
-U-Play
+Play
 Tenemos
 Dubrosky
 custodia
@@ -12444,7 +12465,7 @@ bebida
 DuVaugne
 necesita
 poco
-pick-me-up
+pick
 Dame
 DuVaugne
 agarr�
@@ -12620,7 +12641,7 @@ dijo
 hab�a
 robado
 datos
-U-Play
+Play
 arrebato
 aliento
 DuVaugne
@@ -13113,7 +13134,7 @@ todo
 padres
 pero
 porci�n
-U-Play
+Play
 divide
 entre
 tres
@@ -14506,7 +14527,7 @@ hacen
 amigos
 Ayudan
 ayud�
-compu-
+compu
 para
 ciencia
 escuela
@@ -15049,7 +15070,8 @@ indican
 pas�
 casi
 directamente
-holo-habitaci�n
+holo
+habitaci�n
 registro
 Droide
 dice
@@ -15119,7 +15141,8 @@ hipnotiz�
 pero
 dem�s
 entr�
-holo-habitaci�n
+holo
+habitaci�n
 asesino
 compa�ero
 juegos
@@ -15345,7 +15368,8 @@ inactividad
 corresponde
 entrada
 seg�n
-holo-registro
+holo
+registro
 Entr�
 cerr�
 comp
@@ -15452,7 +15476,7 @@ acuerdo
 lleva
 nuevo
 alguien
-U-Play
+Play
 Todo
 necesita
 llamar
@@ -15850,7 +15874,7 @@ edificio
 discos
 seguridad
 registros
-U-Play
+Play
 noche
 larga
 pronostic�
@@ -15985,7 +16009,7 @@ mirada
 Asociar
 venta
 alguien
-U-Play
+Play
 persona
 conoci�
 convenci�n
@@ -16011,7 +16035,7 @@ inundando
 aceras
 pero
 ella
-holo-
+holo
 habitaci�n
 segura
 donde
@@ -16983,7 +17007,7 @@ objetivo
 podr�a
 haber
 roto
-U-Play
+Play
 antes
 comenzara
 despegar
@@ -17055,7 +17079,8 @@ personas
 involucradas
 desarrollo
 proyecto
-holo-juego
+holo
+juego
 periferia
 misma
 asociaciones
@@ -17501,7 +17526,7 @@ setenta
 cinco
 ciento
 personal
-U-Play
+Play
 premeditado
 �c�mo
 arregl�
@@ -17591,7 +17616,7 @@ camino
 trav�s
 registros
 financieros
-U-Play
+Play
 Constante
 pens�
 gradual
@@ -17803,7 +17828,8 @@ abri�
 puerta
 Tengo
 usar
-holo-habitaci�n
+holo
+habitaci�n
 dijo
 Necesito
 juego
@@ -17820,7 +17846,6 @@ para
 configurarlo
 pasar
 conmigo
--Muy
 bien
 encontraremos
 all�
@@ -17849,7 +17874,8 @@ entonces
 simplemente
 encogi�
 hombros
-holo-habitaci�n
+holo
+habitaci�n
 Roarke
 grande
 apartamento
@@ -17872,12 +17898,14 @@ operaciones
 Pero
 tama�o
 importaba
-holo-reconstrucci�n
+holo
+reconstrucci�n
 asesinato
 tuvo
 lugar
 durante
-holo-juego
+holo
+juego
 dar�a
 mejor
 sensaci�n
@@ -17905,7 +17933,8 @@ entrenamiento
 ahora
 diferente
 encontr�
-holo-sala
+holo
+sala
 mano
 ellos
 Roarke
@@ -17957,7 +17986,7 @@ quer�as
 algo
 parecido
 Fant�stico
-U-Play
+Play
 Nosotros
 hemos
 diseccionado
@@ -17991,7 +18020,7 @@ t�tulos
 pueden
 filtrarse
 Programa
-HC84-K
+HC84
 tienes
 casa
 seguridad
@@ -18308,7 +18337,7 @@ Claro
 Para
 Educaci�n
 Levant�
-cabeza-
+cabeza
 Oigo
 vuelta
 sobre
@@ -18922,7 +18951,7 @@ estaba
 lucha
 Parec�a
 adecuado
-pens�-
+pens�
 importa
 sinton�a
 ella
@@ -19640,7 +19669,7 @@ aqu�
 carreras
 hecho
 empleados
-U-Play
+Play
 DuVaugne
 golpe
 grande
@@ -19704,7 +19733,7 @@ pasar
 coleccionista
 ellos
 llaman
-mini-con
+mini
 este
 Washington
 Tenemos
@@ -20462,7 +20491,7 @@ McNab
 vayan
 este
 Washington
-mini-con
+mini
 Hotel
 Potomac
 Viaje
@@ -20545,7 +20574,7 @@ cay�
 puchero
 Quiero
 zumbido
-U-Play
+Play
 datos
 subterr�neos
 podr�an
@@ -21695,7 +21724,7 @@ alg�n
 tipo
 habilidades
 superiores
-e-juego
+juego
 para
 entrar
 salir
@@ -21844,7 +21873,7 @@ todas
 etapas
 desarrollo
 oficinas
-U-Play
+Play
 Donde
 detalles
 eran
@@ -21897,7 +21926,7 @@ cabeza
 aparentemente
 disfrutando
 Tienes
-e-asesino
+asesino
 organizado
 orientado
 detalles
@@ -21939,7 +21968,7 @@ requiere
 habilidad
 fuerza
 t�pico
-e-friki
+friki
 absoluto
 patolog�a
 aparta
@@ -22009,7 +22038,7 @@ asesino
 Usar�a
 modo
 inteligente
-e-aptitudes
+aptitudes
 cierto
 modo
 manera
@@ -22517,7 +22546,7 @@ Tengo
 nuevos
 quiero
 probar
--comenz�-
+comenz�
 Quiero
 otro
 vistazo
@@ -22603,7 +22632,7 @@ equipo
 Ellos
 tienen
 equipos
-U-Play
+Play
 Muchos
 ellos
 trabajan
@@ -22892,7 +22921,8 @@ aspecto
 mec�nico
 droides
 patio
-mini-robots
+mini
+robots
 baratos
 serie
 r�plicas
@@ -23051,7 +23081,7 @@ jugadores
 agradezco
 estar
 campo
-U-Play
+Play
 infierno
 lugar
 coment�
@@ -23065,7 +23095,7 @@ all�
 sorprendi�
 encontrar
 oficinas
-U-Play
+Play
 apagadas
 nivel
 ruido
@@ -23348,7 +23378,7 @@ frente
 especie
 cara
 p�blica
-U-Play
+Play
 ten�a
 mayor
 parte
@@ -23376,7 +23406,7 @@ siente
 inc�moda
 gusta
 tranquilidad
--Sonri�-
+Sonri�
 sabe
 cosas
 detr�s
@@ -23935,7 +23965,8 @@ cierto
 Benny
 hab�a
 investigado
-holo-juegos
+holo
+juegos
 programas
 exist�an
 como
@@ -24070,7 +24101,7 @@ b�sico
 Luego
 tuvimos
 hacer
-roll-up
+roll
 c�mo
 diablos
 �bamos
@@ -24476,7 +24507,7 @@ Cada
 llevaba
 camiseta
 logo
-U-Play
+Play
 sonrisa
 milla
 ancho
@@ -24900,7 +24931,8 @@ algo
 puedo
 preparar
 �Qu�
-holo-trabajo
+holo
+trabajo
 probar
 Fant�stico
 hizo
@@ -25398,7 +25430,7 @@ registro
 regalos
 promocionales
 inclu�an
-go-tazas
+tazas
 personajes
 juego
 nuevo
@@ -25498,7 +25530,7 @@ b�squedas
 m�gicas
 est�
 stand
-U-Play
+Play
 Se�al�
 Peabody
 Debemos
@@ -25571,7 +25603,7 @@ color
 ciruela
 Mir�
 mapa
--Bueno
+Bueno
 Ser�a
 obligatorio
 Todo
@@ -25607,7 +25639,7 @@ personas
 aglomeraron
 alrededores
 cabina
-U-Play
+Play
 multitud
 colores
 contra
@@ -25744,7 +25776,7 @@ brillante
 aquellos
 nosotros
 estamos
-U-Play
+Play
 sentimos
 hemos
 perdido
@@ -25790,13 +25822,12 @@ jugadores
 Compr�
 primer
 sistema
-U-Play
+Play
 nunca
 mir�
 hacia
 atr�s
 Tengo
-PS-5
 subestaci�n
 Navidad
 pasado
@@ -25855,8 +25886,8 @@ nuestro
 lugar
 hecho
 enviar
-e-mail
-U-Play
+mail
+Play
 invitar
 Bart
 agreg�
@@ -26043,7 +26074,7 @@ agradable
 conversaci�n
 representantes
 stand
-U-Play
+Play
 Tienen
 bandas
 negras
@@ -26293,7 +26324,7 @@ Ella
 entreg�
 refresco
 Esta
-Dee-Light
+Light
 dijo
 gui�o
 hombre
@@ -26317,7 +26348,7 @@ controlo
 hizo
 gesto
 hacia
-tri-espada
+espada
 manera
 hizo
 serpiente
@@ -26366,7 +26397,7 @@ espada
 electrificada
 verdadera
 Baj�
-tri-espada
+espada
 tengo
 autorizaci�n
 Estoy
@@ -26447,7 +26478,7 @@ Tengo
 amigo
 amigo
 trabajaba
-U-Play
+Play
 dijo
 algo
 caliente
@@ -26488,7 +26519,7 @@ Usted
 puede
 preguntar
 cualquiera
-U-Play
+Play
 quien
 sabe
 saber
@@ -27694,7 +27725,7 @@ llam�
 laboratorio
 preguntaba
 obligaba
-e-tipos
+tipos
 trabajar
 cajas
 vidrio
@@ -28030,7 +28061,8 @@ Estamos
 pelando
 capas
 v�ctima
-holo-sistema
+holo
+sistema
 dijo
 Feeney
 mismo
@@ -28055,7 +28087,8 @@ saltos
 tiempo
 programaci�n
 seguridad
-holo-sala
+holo
+sala
 est�
 limpia
 tambi�n
@@ -28109,13 +28142,15 @@ acceso
 nada
 Tengo
 algo
-semi-bueno
+semi
+bueno
 dijo
 Callendar
 hecho
 an�lisis
 registros
-holo-habitaci�n
+holo
+habitaci�n
 oficina
 v�ctima
 jugador
@@ -28123,7 +28158,8 @@ serio
 F�cilmente
 podr�a
 poner
-diez-doce
+diez
+doce
 horas
 serie
 juegos
@@ -28431,7 +28467,8 @@ disco
 como
 vimos
 resulta
-auto-destrucci�n
+auto
+destrucci�n
 todo
 esto
 Sentaron
@@ -28622,7 +28659,8 @@ cuenta
 hace
 disco
 duro
-holo-unidad
+holo
+unidad
 realiza
 problema
 datos
@@ -28656,7 +28694,7 @@ lista
 coincida
 copia
 messengered
-U-Play
+Play
 actualidad
 escenario
 est�
@@ -28665,7 +28703,8 @@ bajo
 nombre
 c�digo
 nada
-holo-unidad
+holo
+unidad
 muestre
 cre�
 asesinado
@@ -28870,7 +28909,7 @@ b�sica
 mismos
 personajes
 Nombr�
-juego-1
+juego
 Usurpador
 Cruzado
 enfrentamiento
@@ -28929,7 +28968,8 @@ in�til
 para
 nosotros
 despu�s
-auto-destrucci�n
+auto
+destrucci�n
 incriminatorio
 para
 encuentran
@@ -29167,7 +29207,7 @@ sobre
 tres
 socios
 restantes
-U-Play
+Play
 Ella
 necesitaba
 algo
@@ -29539,7 +29579,8 @@ alguien
 tiene
 mont�n
 enorme
-doble-culo
+doble
+culo
 dinero
 efectivo
 declarado
@@ -30793,7 +30834,7 @@ juntos
 realmente
 Pregunt�
 Roarke
-U-Play
+Play
 probable
 obtenga
 r�pido
@@ -30952,7 +30993,7 @@ buscando
 utiliza
 espada
 s�lo
-B�squeda-1
+B�squeda
 Usurpador
 otros
 involucran
@@ -31501,7 +31542,7 @@ pr�ximos
 pasos
 etapas
 Quiero
-U-Play
+Play
 antes
 subamos
 parte
@@ -31599,7 +31640,7 @@ mujeres
 transexuales
 ocasionales
 travestis
-talento-
+talento
 pueden
 caminar
 calles
@@ -32401,7 +32442,8 @@ permitido
 extra�o
 entrar
 apartamento
-holo-habitaci�n
+holo
+habitaci�n
 juego
 dijo
 levant�
@@ -32438,7 +32480,7 @@ tenemos
 tres
 h�biles
 inteligentes
-e-frikis
+frikis
 hubiera
 manera
 entrar
@@ -32587,7 +32629,7 @@ forma
 �muy
 buena
 para
-e-friki�
+friki�
 estudi�
 movimientos
 combate
@@ -32941,7 +32983,7 @@ afilada
 tengo
 in�til
 holo
--arma
+arma
 s�lo�
 interrumpi�
 cuando
@@ -33199,7 +33241,8 @@ Entonces
 cosas
 utilizar
 juego
-holo-caracter�sticas
+holo
+caracter�sticas
 para
 cubrirte
 �Intentas
@@ -33365,7 +33408,7 @@ juntos
 �nico
 relaci�n
 fuera
-semi-
+semi
 seria
 Bart
 Necesito
@@ -33408,7 +33451,8 @@ decidi�
 cuando
 Roarke
 orden�
-holo-habitaci�n
+holo
+habitaci�n
 Vamos
 jugar
 nuevo
@@ -33469,7 +33513,8 @@ otro
 romperlos
 apuntalar
 quien
-hizo-porque
+hizo
+porque
 algo
 falta
 tengo
@@ -33521,7 +33566,6 @@ puede
 especie
 adicci�n
 hacen
-�-lo
 asesino
 hace
 �todo
@@ -33625,7 +33669,8 @@ cuando
 insert�
 copia
 juego
-holo-unidad
+holo
+unidad
 Porque
 siento
 como
@@ -33672,7 +33717,7 @@ dijo
 S�lo
 gana
 Program�
-B�squeda-1
+B�squeda
 nivel
 cuatro
 pidi�
@@ -33865,7 +33910,8 @@ dispar�
 fuego
 manos
 Bastante
-helado-murmur�-
+helado
+murmur�
 cuando
 lobos
 estaban
@@ -34260,8 +34306,8 @@ nuestro
 encuentro
 ser�
 corto
-s�-respondi�
-ella-
+respondi�
+ella
 Empecemos
 Este
 espada
@@ -35613,7 +35659,8 @@ menos
 una�
 conferencia
 enlace
-holo-reuni�n
+holo
+reuni�n
 antes
 ella
 hubiera
@@ -35787,7 +35834,8 @@ pensando
 ello
 sue�os
 subconsciente
-whacka-whacka
+whacka
+whacka
 t�rmino
 psicol�gico
 poco
@@ -35906,7 +35954,7 @@ tomar
 papel
 liderazgo
 categor�a
-sub-Play
+Play
 muerte
 Bart
 deja
@@ -36430,7 +36478,7 @@ expendedoras
 Buen
 trabajo
 detective
--Gracias
+Gracias
 teniente
 Jenkinson
 est�
@@ -36703,7 +36751,7 @@ bien
 compa�eros
 amigos
 cercanos
--Claro
+Claro
 excelentes
 Menos
 a�adi�
@@ -36804,7 +36852,7 @@ Hablaba
 usted
 acerca
 ellos
--Claro
+Claro
 ser�a
 especie
 c�mara
@@ -36942,7 +36990,7 @@ decir
 quiso
 decir
 dijo
-U-Play
+Play
 ocupaba
 juegos
 todo
@@ -37188,7 +37236,7 @@ Peabody
 alguien
 aqu�
 pero
-e-hombre
+hombre
 cada
 equipo
 Vamos
@@ -37254,7 +37302,7 @@ sigo
 Bien
 suceda
 vamos
-U-Play
+Play
 para
 notificar
 socios
@@ -37444,7 +37492,6 @@ detective
 supone
 debes
 entenderlo
--Muy
 bien
 Bueno
 Bueno
@@ -37683,7 +37730,7 @@ mayor�a
 atenci�n
 medios
 hombre
-U-Play
+Play
 dijo
 vamos
 este
@@ -37781,7 +37828,6 @@ estado
 toda
 ma�ana
 all�
-Uh-huh
 Gracias
 Ella
 mir�
@@ -38481,7 +38527,7 @@ encontrar
 arma
 homicida
 armario
-e-diario
+diario
 hecho
 Pero
 creo
@@ -39236,7 +39282,8 @@ sombreados
 para
 estudiar
 edificio
-Post-urbano
+Post
+urbano
 temporales
 convirti�
 permanente
@@ -39371,7 +39418,7 @@ desorden
 pero
 compart�a
 predilecci�n
-mega-e
+mega
 computadoras
 sistemas
 pantallas
@@ -39969,7 +40016,7 @@ tarjeta
 memoria
 pero
 r�pida
-mirada-
+mirada
 nada
 perverso
 abri�
@@ -40079,7 +40126,6 @@ aqu�
 jugar
 Jes�s
 murmur�
-Ben-nee
 Llam�
 Mongo
 dej�
@@ -40173,7 +40219,7 @@ todo
 loft
 como
 oficina
-U-Play
+Play
 Pero
 aquellas
 capturaban
@@ -40322,7 +40368,7 @@ Estos
 tres
 viven
 respiran
-e-aire
+aire
 cuando
 trata
 intereses
@@ -40429,7 +40475,7 @@ Todo
 este
 lugar
 todo
-U-Play
+Play
 est�
 registrado
 correctamente
@@ -40490,7 +40536,7 @@ Pero
 primero
 tendr�a
 volver
-U-Play
+Play
 memorial
 Bart
 Minnock
@@ -40635,7 +40681,8 @@ hac�a
 parecer
 extra�amente
 como
-mini-adultos
+mini
+adultos
 Susan
 Sing
 ten�a
@@ -40917,7 +40964,7 @@ acuerdo
 vamos
 hacer
 esto
--Tienes
+Tienes
 raz�n
 Bueno
 tienes
@@ -41217,7 +41264,7 @@ objetivo
 podr�a
 haber
 tragado
-U-Play
+Play
 hace
 mucho
 tiempo
@@ -41370,8 +41417,9 @@ hablar
 zapatos
 supuesto
 ocupar�
-culpa-dijo
-ella-
+culpa
+dijo
+ella
 haces
 demasiado
 f�cil
@@ -41731,7 +41779,7 @@ antes
 pudiera
 cuidar
 fiesta
-Louise-
+Louise
 asesinato
 todo
 a�adi�
@@ -42430,7 +42478,8 @@ Ella
 tendi�
 mano
 Vamos
-hombre-carne
+hombre
+carne
 Debemos
 movernos
 m�sica
@@ -43557,7 +43606,7 @@ Estoy
 bastante
 harta
 todas
-e-cosas
+cosas
 este
 momento
 imagino
@@ -43636,7 +43685,7 @@ poni�ndose
 para
 vivos
 muertos
--Bueno
+Bueno
 Nerviosa
 tocada
 ligeramente
@@ -44020,7 +44069,7 @@ donde
 hab�a
 cerrado
 sesi�n
-U-Play
+Play
 copa
 derecha
 sujetador
@@ -44051,7 +44100,8 @@ pies
 luego
 camin�
 descalza
-holo-habitaci�n
+holo
+habitaci�n
 encantaba
 holo
 Pod�a
@@ -44611,7 +44661,7 @@ v�nculo
 frot�
 manos
 pelo
-e-mail
+mail
 texto
 cualquier
 maldita
@@ -44937,7 +44987,8 @@ oficina
 repuesto
 cocina
 Ella�
-holo-habitaci�n
+holo
+habitaci�n
 Girando
 sobre
 talones
@@ -45196,7 +45247,7 @@ comenz�
 hablar
 nuevo
 Llama
-U-Play
+Play
 Quiero
 saber
 Benny
@@ -45298,12 +45349,14 @@ pareja
 fuimos
 enviados
 igual
-medi-unidad
+medi
+unidad
 Llegamos
 lugar
 siniestro
 delante
-medi-unidad
+medi
+unidad
 aproximadamente
 minutos
 Buen
@@ -45318,7 +45371,8 @@ Hoyt
 quien
 inmediato
 llev�
-holo-habitaci�n
+holo
+habitaci�n
 lado
 este
 unidad
@@ -45421,7 +45475,8 @@ se�or
 Ella
 traslad�
 directamente
-holo-habitaci�n
+holo
+habitaci�n
 donde
 sangre
 Cill
@@ -46126,7 +46181,7 @@ gente
 todo
 Mand�
 unos
-e-mail
+mail
 personales
 luego
 poco
@@ -46379,7 +46434,8 @@ fuerza
 Est�
 bien
 disco
-holo-programa
+holo
+programa
 como
 dije
 puede
@@ -46491,7 +46547,8 @@ hablan
 ella
 para
 distraerla
-holo-juego
+holo
+juego
 entiendo
 porque
 lugar
@@ -46676,7 +46733,8 @@ imagen
 diferente
 Ella
 asegura
-holo-habitaci�n
+holo
+habitaci�n
 podr�an
 haber
 entrado
@@ -46720,7 +46778,8 @@ barrenderos
 entraran
 Mientras
 mostraba
-holo-habitaci�n
+holo
+habitaci�n
 daba
 instalaci�n
 Peabody
@@ -46897,7 +46956,8 @@ esta
 para
 Feeney
 McNab
-Holo-habitaci�n
+Holo
+habitaci�n
 Necesito
 todo
 puedan
@@ -48805,7 +48865,8 @@ registros
 primeros
 responder
 piso
-holo-habitaci�n
+holo
+habitaci�n
 Cill
 estaba
 encogida
@@ -48915,7 +48976,8 @@ exploraciones
 malo
 victima
 utiliz�
-holo-cuarto
+holo
+cuarto
 otra
 mismo
 proyecto
@@ -49039,7 +49101,8 @@ ca�da
 ca�da
 �Est�
 pensando
-holo-sala
+holo
+sala
 donde
 tiraron
 lugar
@@ -49231,7 +49294,7 @@ Loca
 teor�a
 murmur�
 camino�
--hacia
+hacia
 teor�a
 fuera
 �rbita
@@ -49713,13 +49776,15 @@ socios
 v�ctima
 trabajo
 cabeza
-Holo-habitaci�n
+Holo
+habitaci�n
 hizo
 gesto
 pantalla
 esto
 ser�a
-holo-habitaci�n
+holo
+habitaci�n
 Ser�a
 suya
 apartamento
@@ -50042,7 +50107,7 @@ rostros
 manos
 cuerpos
 Si�ntense
--repiti�
+repiti�
 poniendo
 suficiente
 autoridad
@@ -50122,7 +50187,8 @@ comprensiva
 creo
 tipo
 cosas
-Free-Ager
+Free
+Ager
 dijo
 d�bil
 deliberado
@@ -50385,7 +50451,8 @@ afuera
 Deme
 posibilidades
 Reales
-Cincuenta-cincuenta
+Cincuenta
+cincuenta
 generoso
 pero
 hubiera
@@ -50514,7 +50581,7 @@ antes
 dejarla
 pasar
 igual
-U-Play
+Play
 paredes
 eran
 vidrio
@@ -50736,7 +50803,7 @@ Peabody
 hac�a
 arreglos
 Teniente
--dijo
+dijo
 Roarke
 Ella
 sali�
@@ -50794,7 +50861,8 @@ compatibles
 ca�da
 encontrada
 piso
-holo-habitaci�n
+holo
+habitaci�n
 armas
 dejar
 rastro
@@ -50817,12 +50885,12 @@ confiaban
 asesino
 tiene
 superiores
-e-competencias
+competencias
 hasta
 ahora
 desconcertado
 nuestro
-e-equipo
+equipo
 encontrar
 brechas
 Suponiendo
@@ -50999,7 +51067,8 @@ progresos
 reconstrucci�n
 disco
 Bart
-holo-habitaci�n
+holo
+habitaci�n
 poderoso
 nano
 chip
@@ -51025,7 +51094,8 @@ vamos
 empezar
 qui�n
 Bueno
-cincuenta-cincuenta
+cincuenta
+cincuenta
 para
 mayor�a
 pero
@@ -51484,7 +51554,7 @@ asumi�
 papel
 liderazgo
 categor�a
-U-Play
+Play
 Dejando
 Cill
 afuera
@@ -51619,12 +51689,13 @@ asesinato
 Pero
 s�lo
 sombras
-neuro-y
+neuro
 nanotecnolog�a
 avanzado
 im�genes
 producidas
-holo-programa
+holo
+programa
 accionan
 reaccionan
 acuerdo
@@ -51877,7 +51948,7 @@ dem�s
 queda
 debe
 verdad
--murmur�
+murmur�
 Roarke
 duda
 debe
@@ -51887,7 +51958,7 @@ tecnolog�a
 cualquier
 registro
 borrador
-U-Play
+Play
 equipo
 socios
 Tendr�
@@ -52476,7 +52547,8 @@ mientras
 ejecutaba
 juego
 Fant�stico
-holo-habitaci�n
+holo
+habitaci�n
 asegurada
 apartamento
 tambi�n
@@ -52544,7 +52616,8 @@ mientras
 jugaba
 mismo
 juego
-holo-habitaci�n
+holo
+habitaci�n
 seguridad
 apartamento
 estaba
@@ -52640,7 +52713,8 @@ f�sica
 lugar
 siniestro
 ataque
-holo-habitaci�n
+holo
+habitaci�n
 Estoy
 acuerdo
 sali�
@@ -52667,7 +52741,8 @@ descrito
 superficie
 lisa
 plana
-holo-habitaci�n
+holo
+habitaci�n
 �C�mo
 puede
 hombre
@@ -52999,7 +53074,8 @@ dirige
 tercer
 piso
 entra
-holo-habitaci�n
+holo
+habitaci�n
 asegura
 Ella
 jugar
@@ -53138,7 +53214,8 @@ promedio
 movimientos
 indica
 encontr�
-holo-imagen
+holo
+imagen
 aqu�
 camino
 barro
@@ -53302,7 +53379,7 @@ enfocada
 concentraci�n
 nanos
 Protecci�n
-tri-Gees
+Gees
 para
 mantener
 sistema
@@ -53367,7 +53444,8 @@ cuerpo
 destrozado
 Cill
 piso
-holo-habitaci�n
+holo
+habitaci�n
 base
 misma
 pero
@@ -53522,7 +53600,7 @@ mientras
 siguientes
 veinte
 minutos
-e-equipo
+equipo
 sigui�
 garabatos
 sacudidas
@@ -54321,7 +54399,7 @@ vemos
 nuestros
 shows
 �Harry
--Grit�
+Grit�
 nuevo
 luego
 suspir�
@@ -54459,8 +54537,8 @@ emocionado
 tambi�n
 venir
 buscarnos
--grit�
-ella-
+grit�
+ella
 Det�n
 juego
 Tienen
@@ -55236,7 +55314,7 @@ tienes
 mir�
 ojos
 Roarke
--Espero
+Espero
 haya
 sido
 peor
@@ -55339,7 +55417,8 @@ ataques
 mientras
 disparaban
 contra
-holo-im�genes
+holo
+im�genes
 �Por
 dispar�
 contra
@@ -55581,7 +55660,8 @@ jaula
 jaula
 donde
 debido
-ciber-cargos
+ciber
+cargos
 ser�
 acceso
 juguetes
@@ -55798,7 +55878,7 @@ hecho
 sabe
 est�s
 cohabitando
-e-hombre
+hombre
 tengo
 �Sugerencia
 Debes
@@ -56148,7 +56228,7 @@ Pero
 estaba
 haciendo
 all�
-U-Play
+Play
 trabajabas
 fuera
 oficina
@@ -56332,7 +56412,7 @@ haces
 arreglos
 mientras
 haces
-e-equipo
+equipo
 estar�
 diseccionando
 programa
@@ -56388,13 +56468,13 @@ blancos
 trabajo
 valioso
 complejo
-e-personal
+personal
 obtenerlo
 llev�
 a�os
 hacerlo
 tuyo
-U-Play
+Play
 tienes
 contrato
 Compartir
@@ -56841,7 +56921,8 @@ Cuando
 enviaste
 amigos
 socios
-holo-habitaciones
+holo
+habitaciones
 sab�as
 ten�an
 casi
@@ -56911,7 +56992,7 @@ ten�a
 derecho
 parte
 importante
-U-Play
+Play
 como
 igual
 importancia
@@ -58087,7 +58168,7 @@ Benny
 �Qu�
 hacer
 ahora
-U-Play
+Play
 importa
 Ella
 Ella

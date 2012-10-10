@@ -5,9 +5,12 @@
 package vista;
 
 import controller.*;
+import java.awt.Rectangle;
 import java.io.File;
+import java.util.ArrayList;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import org.jfree.chart.ChartPanel;
 import org.jvnet.substance.SubstanceLookAndFeel;
 
 /**
@@ -18,7 +21,10 @@ public class VistaProyecto extends javax.swing.JFrame {
     
     //Atributos nuevos
     private File raiz, separado;
+    private ArrayList<String> lista;
     private ControllerDAO controlDao;
+    private InternalSortController controlInterno;
+    private ExternalSortController controlExterno;
     
     public File getRaiz(){
         return this.raiz;
@@ -42,10 +48,14 @@ public class VistaProyecto extends javax.swing.JFrame {
      */
     public VistaProyecto() {
 
+        
         initComponents();
-        nombreDocLb.setText("");
+        nombreDocLb.setText("         ");
         controlDao = new ControllerDAO();
+        controlInterno = new InternalSortController();
+        controlExterno = new ExternalSortController();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -58,33 +68,13 @@ public class VistaProyecto extends javax.swing.JFrame {
 
         jPopupMenu1 = new javax.swing.JPopupMenu();
         jPopupMenu2 = new javax.swing.JPopupMenu();
-        Panel = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        ordenarBtn = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        algoritmoBar1 = new javax.swing.JButton();
-        algoritmoBar2 = new javax.swing.JButton();
-        algoritmoBar3 = new javax.swing.JButton();
-        algoritmoBar4 = new javax.swing.JButton();
-        algoritmoBar5 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
+        TabPane = new javax.swing.JTabbedPane();
+        internoPanel = new javax.swing.JPanel();
+        ordenarInternoBtn = new javax.swing.JButton();
+        shellPanel = new javax.swing.JPanel();
         ordenarShellBtn = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
-        shellsortBtn1 = new javax.swing.JButton();
-        shellsortBtn2 = new javax.swing.JButton();
-        shellsortBtn3 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        algoritmoEx1 = new javax.swing.JButton();
-        algoritmoEx2 = new javax.swing.JButton();
-        algoritmoEx3 = new javax.swing.JButton();
-        ordenarExBtn = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        externoPanel = new javax.swing.JPanel();
+        ordenarExternoBtn = new javax.swing.JButton();
         cargarArchivoBtn = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         nombreDocLb = new javax.swing.JLabel();
@@ -99,226 +89,94 @@ public class VistaProyecto extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Algoritmos de Ordenacion");
+        setPreferredSize(new java.awt.Dimension(600, 480));
         setResizable(false);
 
-        Panel.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
-        Panel.setName("JTabbedPane");
+        TabPane.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
+        TabPane.setName("JTabbedPane");
 
-        ordenarBtn.setText("Ordenar");
+        ordenarInternoBtn.setFont(new java.awt.Font("Cantarell", 0, 24)); // NOI18N
+        ordenarInternoBtn.setText("Ordenar");
+        ordenarInternoBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ordenarInternoBtnActionPerformed(evt);
+            }
+        });
 
-        jLabel1.setText("T.Max");
-
-        jLabel2.setText("T.Min");
-
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(algoritmoBar1)
-                .addGap(104, 104, 104)
-                .addComponent(algoritmoBar2)
-                .addGap(141, 141, 141)
-                .addComponent(algoritmoBar3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
-                .addComponent(algoritmoBar4)
-                .addGap(99, 99, 99)
-                .addComponent(algoritmoBar5)
-                .addContainerGap())
+        javax.swing.GroupLayout internoPanelLayout = new javax.swing.GroupLayout(internoPanel);
+        internoPanel.setLayout(internoPanelLayout);
+        internoPanelLayout.setHorizontalGroup(
+            internoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(internoPanelLayout.createSequentialGroup()
+                .addGap(139, 139, 139)
+                .addComponent(ordenarInternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(146, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(algoritmoBar5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(algoritmoBar4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(algoritmoBar3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(algoritmoBar2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(algoritmoBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+        internoPanelLayout.setVerticalGroup(
+            internoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(internoPanelLayout.createSequentialGroup()
+                .addGap(105, 105, 105)
+                .addComponent(ordenarInternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(103, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 129, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
-                .addGap(627, 627, 627))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(ordenarBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
-                        .addComponent(ordenarBtn)
-                        .addGap(108, 108, 108)
-                        .addComponent(jLabel2)
-                        .addGap(24, 24, 24))))
-        );
+        TabPane.addTab("Interno", internoPanel);
 
-        Panel.addTab("Interno", jPanel1);
-
+        ordenarShellBtn.setFont(new java.awt.Font("Cantarell", 0, 24)); // NOI18N
         ordenarShellBtn.setText("Ordenar");
+        ordenarShellBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ordenarShellBtnActionPerformed(evt);
+            }
+        });
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(shellsortBtn1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 254, Short.MAX_VALUE)
-                .addComponent(shellsortBtn2)
-                .addGap(211, 211, 211)
-                .addComponent(shellsortBtn3)
-                .addGap(53, 53, 53))
+        javax.swing.GroupLayout shellPanelLayout = new javax.swing.GroupLayout(shellPanel);
+        shellPanel.setLayout(shellPanelLayout);
+        shellPanelLayout.setHorizontalGroup(
+            shellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(shellPanelLayout.createSequentialGroup()
+                .addGap(138, 138, 138)
+                .addComponent(ordenarShellBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(147, Short.MAX_VALUE))
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(shellsortBtn3)
-                    .addComponent(shellsortBtn2)
-                    .addComponent(shellsortBtn1))
-                .addContainerGap())
+        shellPanelLayout.setVerticalGroup(
+            shellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(shellPanelLayout.createSequentialGroup()
+                .addGap(95, 95, 95)
+                .addComponent(ordenarShellBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(113, Short.MAX_VALUE))
         );
 
-        jLabel7.setText("T.Max");
+        TabPane.addTab("Shellsort", shellPanel);
 
-        jLabel8.setText("T.Min");
+        externoPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(0, 137, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel7))
-                .addGap(619, 619, 619))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(ordenarShellBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+        ordenarExternoBtn.setFont(new java.awt.Font("Cantarell", 0, 24)); // NOI18N
+        ordenarExternoBtn.setText("Ordenar");
+        ordenarExternoBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ordenarExternoBtnActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout externoPanelLayout = new javax.swing.GroupLayout(externoPanel);
+        externoPanel.setLayout(externoPanelLayout);
+        externoPanelLayout.setHorizontalGroup(
+            externoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(externoPanelLayout.createSequentialGroup()
+                .addGap(136, 136, 136)
+                .addComponent(ordenarExternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(147, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addGap(121, 121, 121)
-                        .addComponent(ordenarShellBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
-                        .addComponent(jLabel8)
-                        .addGap(23, 23, 23))))
+        externoPanelLayout.setVerticalGroup(
+            externoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(externoPanelLayout.createSequentialGroup()
+                .addGap(94, 94, 94)
+                .addComponent(ordenarExternoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(112, Short.MAX_VALUE))
         );
 
-        Panel.addTab("Shellsort", jPanel4);
-
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(algoritmoEx1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 300, Short.MAX_VALUE)
-                .addComponent(algoritmoEx2)
-                .addGap(150, 150, 150)
-                .addComponent(algoritmoEx3)
-                .addGap(55, 55, 55))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(algoritmoEx3)
-                    .addComponent(algoritmoEx2)
-                    .addComponent(algoritmoEx1))
-                .addContainerGap())
-        );
-
-        ordenarExBtn.setText("Ordenar");
-
-        jLabel4.setText("T.Max");
-
-        jLabel5.setText("T.Min");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap(149, Short.MAX_VALUE)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addGap(4, 4, 4))))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(ordenarExBtn)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(119, 119, 119)
-                        .addComponent(ordenarExBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
-                        .addComponent(jLabel5)
-                        .addGap(20, 20, 20))))
-        );
-
-        Panel.addTab("Externo", jPanel3);
+        TabPane.addTab("Externo", externoPanel);
 
         cargarArchivoBtn.setText("Cargar Archivo");
         cargarArchivoBtn.setToolTipText("Presione para cargar un archivo de texto que desee ordenar");
@@ -373,22 +231,23 @@ public class VistaProyecto extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(cargarArchivoBtn)
-                .addGap(28, 28, 28)
-                .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(nombreDocLb)
-                .addGap(215, 215, 215))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Panel, javax.swing.GroupLayout.PREFERRED_SIZE, 808, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cerrarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(52, 52, 52)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(cargarArchivoBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(nombreDocLb))
+                    .addComponent(TabPane, javax.swing.GroupLayout.PREFERRED_SIZE, 442, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(338, 338, 338)
                 .addComponent(jLabel3)
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cerrarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(329, 329, 329))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -400,16 +259,20 @@ public class VistaProyecto extends javax.swing.JFrame {
                         .addComponent(jLabel3)
                         .addGap(398, 398, 398))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(5, 5, 5)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cargarArchivoBtn)
-                            .addComponent(nombreDocLb, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(5, 5, 5)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(nombreDocLb, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(cargarArchivoBtn)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Panel, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addComponent(TabPane, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)
                         .addComponent(cerrarBtn)
-                        .addGap(20, 20, 20))))
+                        .addGap(74, 74, 74))))
         );
 
         pack();
@@ -432,12 +295,12 @@ public class VistaProyecto extends javax.swing.JFrame {
         chooser.setFileFilter(controlFilter.getFilter());
         chooser.setAcceptAllFileFilterUsed(false);
         chooser.showOpenDialog(this);
-        
-
         try {
             setRaiz(chooser.getSelectedFile());
             nombreDocLb.setText(getRaiz().getName());
-            separado = controlDao.writeFile(controlDao.readFile(getRaiz()), "separado");
+            this.lista = controlDao.readFile(getRaiz());
+            controlInterno.setArregloList(lista);
+            this.separado = controlDao.writeFile(lista, "separado");
             JOptionPane.showMessageDialog(this, "¡Archivo cargado y separado con exito!");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Archivo no cargado");
@@ -458,6 +321,30 @@ public class VistaProyecto extends javax.swing.JFrame {
 
     }//GEN-LAST:event_cerrarBtnActionPerformed
 
+    private void ordenarInternoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarInternoBtnActionPerformed
+        // TODO add your handling code here:
+        Graficador graficador;
+        graficador = new Graficador("Ordenacion Interna","Algoritmos de Ordenacion Interna","Milisegundos");
+        graficador.setData(controlInterno.getMilisInsercion(), "Milisegundos", "Insercion");
+        graficador.setData(controlInterno.getMilisBurbujaMenor(), "Milisegundos", "Burbuja Menor");
+        graficador.setData(controlInterno.getMilisBurbujaMayor(), "Milisegundos", "Burbuja Mayor");
+        graficador.setData(controlInterno.getMilisMergeSort(), "Milisegundos", "Mergesort");
+        graficador.setData(controlInterno.getMilisQuickSort(), "Milisegundos", "Quicksort");
+        graficador.drawGraphics();
+        
+    }//GEN-LAST:event_ordenarInternoBtnActionPerformed
+
+    private void ordenarShellBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarShellBtnActionPerformed
+        // TODO add your handling code here:
+        Graficador graficador;
+        graficador = new Graficador("Ordenacion por Shellsort","Algoritmos de Shellsort","Milisegundos");
+    }//GEN-LAST:event_ordenarShellBtnActionPerformed
+
+    private void ordenarExternoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarExternoBtnActionPerformed
+        // TODO add your handling code here:
+        Graficador graficador = new Graficador("Ordenacion Externa","Algortimos de Ordenacion Externa","Milisegundos");
+    }//GEN-LAST:event_ordenarExternoBtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -475,46 +362,28 @@ public class VistaProyecto extends javax.swing.JFrame {
             }
         });
     }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTabbedPane Panel;
-    private javax.swing.JButton algoritmoBar1;
-    private javax.swing.JButton algoritmoBar2;
-    private javax.swing.JButton algoritmoBar3;
-    private javax.swing.JButton algoritmoBar4;
-    private javax.swing.JButton algoritmoBar5;
-    private javax.swing.JButton algoritmoEx1;
-    private javax.swing.JButton algoritmoEx2;
-    private javax.swing.JButton algoritmoEx3;
+    private javax.swing.JTabbedPane TabPane;
     private javax.swing.JButton cargarArchivoBtn;
     private javax.swing.JButton cerrarBtn;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel externoPanel;
+    private javax.swing.JPanel internoPanel;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu jPopupMenu2;
     private javax.swing.JMenuItem licenciaMenu;
     private javax.swing.JLabel nombreDocLb;
-    private javax.swing.JButton ordenarBtn;
-    private javax.swing.JButton ordenarExBtn;
+    private javax.swing.JButton ordenarExternoBtn;
+    private javax.swing.JButton ordenarInternoBtn;
     private javax.swing.JButton ordenarShellBtn;
     private javax.swing.JMenuItem salirMenu;
-    private javax.swing.JButton shellsortBtn1;
-    private javax.swing.JButton shellsortBtn2;
-    private javax.swing.JButton shellsortBtn3;
+    private javax.swing.JPanel shellPanel;
     // End of variables declaration//GEN-END:variables
+    
 }
