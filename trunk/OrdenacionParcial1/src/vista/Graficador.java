@@ -67,6 +67,7 @@ public class Graficador {
         JFreeChart chart = ChartFactory.createBarChart(getTitulo(), getCategoria(), getTipoValor(), getDataset(), PlotOrientation.VERTICAL, true, true, false);
         ChartFrame frame = new ChartFrame(getTitulo(), chart);
         frame.pack();
+        frame.setResizable(false);
         frame.setVisible(true);
     }
     
