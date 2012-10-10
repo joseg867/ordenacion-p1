@@ -8,30 +8,40 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.domain.externos.MezclaDirecta;
+import model.domain.externos.MezclaEquilibrada;
 
 /**
  *
  * @author gustavo
  */
 public class ExternalSortController {
-    
-        private MezclaDirecta mezcla = new MezclaDirecta();
-    private static final String F = "F.txt", F1 = "F1.txt", F2 = "F3.txt";
+
+    private MezclaDirecta mezclaDirecta = new MezclaDirecta();
+    private MezclaEquilibrada mezclaEquilibrada = new MezclaEquilibrada();
+    private static final String ARCHIVOORIGEN = "F.txt", AUXILIAR1 = "F1.txt", AUXILIAR2 = "F3.txt";
 
     /**
      *
      * @return
      */
-    public MezclaDirecta getMezcla() {
-        return mezcla;
+    public MezclaDirecta getMezclaDirecta() {
+        return mezclaDirecta;
     }
 
     /**
      *
-     * @param mezcla
+     * @param mezclaDirecta
      */
-    public void setMezcla(MezclaDirecta mezcla) {
-        this.mezcla = mezcla;
+    public void setMezclaDirecta(MezclaDirecta mezclaDirecta) {
+        this.mezclaDirecta = mezclaDirecta;
+    }
+
+    public MezclaEquilibrada getMezclaEquilibrada() {
+        return mezclaEquilibrada;
+    }
+
+    public void setMezclaEquilibrada(MezclaEquilibrada mezclaEquilibrada) {
+        this.mezclaEquilibrada = mezclaEquilibrada;
     }
 
     /**
@@ -47,15 +57,23 @@ public class ExternalSortController {
     public double getMilisMezclaDirecta() {
         double t0 = 0, t1 = 0;
         try {
-            
+
             t0 = System.currentTimeMillis();
-            getMezcla().MezclaDirecta(F, F1, F2);
+            //getMezcla().MezclaDirecta(getNewArchivo(), AUXILIAR1, AUXILIAR2)
+            getMezclaDirecta().MezclaDirecta(ARCHIVOORIGEN, AUXILIAR1, AUXILIAR2);
             t1 = System.currentTimeMillis() - t0;
-            
+
         } catch (IOException ex) {
             Logger.getLogger(ExternalSortController.class.getName()).log(Level.SEVERE, null, ex);
         }
         return t1;
     }
-    
+
+    public double getMilisMezclaEquilibrada() {
+        double t0 = 0, t1 = 0;
+        
+        
+        
+        return t0;
+    }
 }

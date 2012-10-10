@@ -238,20 +238,6 @@ public class MezclaDirecta {
 	        return elementos;
 	    } //fin numero de elementos
 		
-		/**
-		 * @param args
-		 */
-		public static void main(String[] args) {
-			// TODO Auto-generated method stub
-			String F = "F.txt", F1 = "F1.txt", F2 = "F2.txt";
-	        MezclaDirecta ordenamientoExterno = new MezclaDirecta();
-	        try {
-				ordenamientoExterno.MezclaDirecta(F, F1, F2);
-	        	//ordenamientoExterno.numeroElementos(F);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-	    }//fin main
+
     
 }
