@@ -98,7 +98,7 @@ public class ExternalSortController {
         double t0 = 0, t1 = 0;
         try {
             t0 = System.currentTimeMillis();
-            getMezclaEquilibrada().mezclaequilibrada("separado.txt", AUXILIAR1, AUXILIAR2, AUXILIAR3);  
+            getMezclaEquilibrada().mezclaequilibrada("equi.txt", AUXILIAR1, AUXILIAR2, AUXILIAR3);  
             t1 = System.currentTimeMillis()- t0;
             
             
