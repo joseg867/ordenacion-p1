@@ -12,6 +12,10 @@ import java.util.ArrayList;
  * @author gustavo
  */
 public class testOrdenamientoInterno {
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		OrdenamientoInterno ordenamiento = new OrdenamientoInterno();

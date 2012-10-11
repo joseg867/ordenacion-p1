@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package model.domain.externos;
 
 import java.io.BufferedReader;
@@ -14,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author gustavo
+ * @author GustavoCanul, NoeCob, ArandiLopez
  */
 public class MezclaDirecta {
     

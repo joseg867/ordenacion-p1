@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package controller;
 
 import java.util.ArrayList;
@@ -9,8 +5,8 @@ import model.domain.internos.OrdenamientoInterno;
 import model.domain.internos.OrdenamientoShellSort;
 
 /**
- *
- * @author ArandiLopez
+ * Clase que controla los metodos de ordenamiento internos 
+ * @author GustavoCanul, NoeCob, ArandiLopez
  */
 public class InternalSortController {
 
@@ -29,15 +25,15 @@ public class InternalSortController {
     }
 
     /**
-     *
-     * @return
+     * Devuelve el ArregloList
+     * @return arregloList 
      */
     public ArrayList<String> getArregloList() {
         return arregloList;
     }
 
     /**
-     *
+     * Inicializa los valores de ArregloList
      * @param arregloList
      */
     public void setArregloList(ArrayList<String> arregloList) {
@@ -45,8 +41,7 @@ public class InternalSortController {
     }
 
     /**
-     * Metodo para obtner el tiempo de duracion del proceso de ordenamiento de
-     * insercion.
+     * Metodo para obtner el tiempo de ejecucion de insercion.
      *
      * @return t1
      */
@@ -60,9 +55,7 @@ public class InternalSortController {
     }
 
     /**
-     * Metodo para obtner el tiempo de duracion del proceso de ordenamiento de
-     * Burbuja mayor.
-     *
+     * Metodo para obtner el tiempo ejecucion de Burbuja mayor.
      * @return t1
      */
     public double getMilisBurbujaMayor() {
@@ -75,10 +68,8 @@ public class InternalSortController {
     }
 
     /**
-     * Metodo para obtner el tiempo de duracion del proceso de ordenamiento de
-     * Burbuja menor.
-     *
-     * @return
+     * Metodo para obtner el tiempo de ejecucion de Burbuja menor.
+     * @return t1 
      */
     public double getMilisBurbujaMenor() {
         double t0, t1;
@@ -90,8 +81,8 @@ public class InternalSortController {
     }
 
     /**
-     *
-     * @return
+     * Metodo para obtener el tiempo de ejecucion del QuickSort
+     * @return t1
      */
     public double getMilisQuickSort() {
         double t0, t1;
@@ -103,8 +94,8 @@ public class InternalSortController {
     }
 
     /**
-     *
-     * @return
+     * Metodo para obtener el tiempo de ejecucion de MergeSort
+     * @return t1
      */
     public double getMilisMergeSort() {
         double t0, t1;
@@ -116,13 +107,9 @@ public class InternalSortController {
     }
 
     /**
-     * ****************************************************************************************************************************
-     */
-    /**
-     * Metodo para obtner el tiempo de duracion del proceso de ordenamiento de
-     * Shellsort
+     * Metodo para obtner el tiempo ejecucion del Shellsort
      *
-     * @return
+     * @return t1
      */
     public double getMilisShellSerieHibberd() {
         double t0, t1;
@@ -135,7 +122,7 @@ public class InternalSortController {
 
     /**
      *
-     * @return
+     * @return t1
      */
     public double getMilisShellSeriePapernov() {
         double t0, t1;
@@ -161,7 +148,7 @@ public class InternalSortController {
 
     /**
      *
-     * @return
+     * @return t1
      */
     public double getMilisShellSerieFrank() {
         double t0, t1;
@@ -173,15 +160,15 @@ public class InternalSortController {
     }
 
     /**
-     * *************************************************************************************************************************
-     * @return 
+     * Devuelve el Shellshort ordenado 
+     * @return ordenaShell
      */
     public OrdenamientoShellSort getOrdenaShell() {
         return ordenaShell;
     }
 
     /**
-     *
+     * Inicializa los valores del ordenamientoShellSort
      * @param ordenaShell
      */
     public void setOrdenaShell(OrdenamientoShellSort ordenaShell) {
@@ -189,6 +176,7 @@ public class InternalSortController {
     }
 
     /**
+     * 
      * @return the ordenador
      */
     public OrdenamientoInterno getOrdenador() {

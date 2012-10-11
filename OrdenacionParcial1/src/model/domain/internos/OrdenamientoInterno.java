@@ -30,7 +30,6 @@ public class OrdenamientoInterno {
 
 	/**
      *
-     * @param palabras
      */
     public void insercion() {
 		int i, k;
@@ -53,7 +52,6 @@ public class OrdenamientoInterno {
 
 	/**
      *
-     * @param palabras
      */
     public void burbujaMenor() {
 		int i, j;
@@ -77,7 +75,6 @@ public class OrdenamientoInterno {
 	/**
 	 * Metodo de ordenamiento interno por burbuja mayor
          * 
-         * @param palabras 
          */
 	public void burbujaMayor() {
 		int i, j;
@@ -101,7 +98,6 @@ public class OrdenamientoInterno {
 	 * Metodo de ordenamiento interno quickSort que maneja el parseo de los
 	 * pivotes
          * 
-         * @param palabras 
          */
 	public void QuikSort() {
 		int ini, fin, pos;
