@@ -4,6 +4,7 @@
  */
 package vista;
 
+import DAO.CopiaArchivo;
 import controller.*;
 import java.io.File;
 import java.util.ArrayList;
@@ -23,6 +24,7 @@ public class VistaProyecto extends javax.swing.JFrame {
     private ControllerDAO controlDao;
     private InternalSortController controlInterno;
     private ExternalSortController controlExterno;
+    private final CopiaArchivo copiador;
     
     /**
      *
@@ -68,6 +70,7 @@ public class VistaProyecto extends javax.swing.JFrame {
         controlDao = new ControllerDAO();
         controlInterno = new InternalSortController();
         controlExterno = new ExternalSortController();
+        copiador = new CopiaArchivo();
     }
 
     /**
@@ -263,7 +266,10 @@ public class VistaProyecto extends javax.swing.JFrame {
             this.lista = controlDao.readFile(getRaiz());
             controlInterno.setArregloList(lista);
             this.separado = controlDao.writeFile(lista, "separado");
-            controlExterno.setOrigen(separado);
+            copiador.createCopyFile(separado, "directa.txt");
+            copiador.createCopyFile(separado, "natural.txt");
+            copiador.createCopyFile(separado, "equi.txt");
+            
             JOptionPane.showMessageDialog(this, "¡Archivo cargado y separado con exito!");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Archivo no cargado");
@@ -301,6 +307,7 @@ public class VistaProyecto extends javax.swing.JFrame {
         Graficador graficador = new Graficador("Ordenacion Externa", "Algortimos de Ordenacion Externa", "Milisegundos");
         graficador.setData(controlExterno.getMilisMezclaDirecta(), "Milisegundos", "Mezcla Directa");
         graficador.setData(controlExterno.getMilisMezclaEquilibrada(), "Milisegundos", "Mezcla Equilibrada");
+        //graficador.setData(controlExterno.getMilisMezclaNatural(), "Milisegundos", "Mezcla Natural");
         graficador.drawGraphics();
     }//GEN-LAST:event_ordenarExternoBtnActionPerformed
 

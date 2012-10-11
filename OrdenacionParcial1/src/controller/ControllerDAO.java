@@ -1,5 +1,6 @@
 package controller;
 
+import DAO.CopiaArchivo;
 import DAO.DAO;
 import java.io.File;
 import java.util.ArrayList;
@@ -10,8 +11,7 @@ import java.util.ArrayList;
  */
 public class ControllerDAO {
 
-    DAO dao;
-
+    private DAO dao;
     /**
      * Metodo que crea un DAO
      */
@@ -53,5 +53,6 @@ public class ControllerDAO {
     public File writeFile(ArrayList<String> list , String name){
         return dao.escribir(list, name);
     }
+   
    
 }//
