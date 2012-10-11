@@ -17,7 +17,7 @@ public class ExternalSortController {
     private MezclaDirecta mezclaDirecta = new MezclaDirecta();
     private MezclaEquilibrada mezclaEquilibrada = new MezclaEquilibrada();
     private MezclaNatural mezclaNatural = new MezclaNatural();
-    private static final String AUXILIAR1 = "F1.txt", AUXILIAR2 = "F2.txt",AUXILIAR3 = "F3" ;
+    private static final String AUXILIAR1 = "F1.txt", AUXILIAR2 = "F2.txt",AUXILIAR3 = "F3.txt" ;
    
 
     
@@ -98,7 +98,7 @@ public class ExternalSortController {
         double t0 = 0, t1 = 0;
         try {
             t0 = System.currentTimeMillis();
-            getMezclaEquilibrada().mezclaequilibrada("equi.txt", AUXILIAR1, AUXILIAR2, AUXILIAR3);  
+            getMezclaEquilibrada().mezclaequilibrada("separado.txt", AUXILIAR1, AUXILIAR2, AUXILIAR3);  
             t1 = System.currentTimeMillis()- t0;
             
             
