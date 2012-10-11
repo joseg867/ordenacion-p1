@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package vista;
 
 import controller.InternalSortController;
@@ -14,8 +10,8 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
 
 /**
- *
- * @author ArandiLopez
+ * Clase encargada de graficar los tiempos de ejecucion de los metodos de ordenamiento
+ * @author GustavoCanul, NoeCob, ArandiLopez
  */
 public class Graficador {
 
@@ -36,15 +32,15 @@ public class Graficador {
     }
 
     /**
-     *
-     * @return
+     * Metodo encargado de devolver categoria
+     * @return Categoria 
      */
     public String getCategoria() {
         return categoria;
     }
 
     /**
-     *
+     * Metodo encargado de inicializar los valores de categoria
      * @param categoria
      */
     public void setCategoria(String categoria) {
@@ -52,15 +48,15 @@ public class Graficador {
     }
 
     /**
-     *
-     * @return
+     * Metodo encargado de devolver el tipo de valor
+     * @return tipoValor
      */
     public String getTipoValor() {
         return tipoValor;
     }
 
     /**
-     *
+     * Metodo encargado de inicializar tipoValor
      * @param tipoValor
      */
     public void setTipoValor(String tipoValor) {
@@ -68,15 +64,15 @@ public class Graficador {
     }
 
     /**
-     *
-     * @return
+     * Metodo encargado de devolver el titulo
+     * @return Titulo
      */
     public String getTitulo() {
         return titulo;
     }
 
     /**
-     *
+     * Metodo que iniciliza titulo
      * @param titulo
      */
     public void setTitulo(String titulo) {
@@ -84,7 +80,7 @@ public class Graficador {
     }
 
     /**
-     *
+     * Metodo que inicializa los valores de Data 
      * @param milis
      * @param tipoTiempo
      * @param sortType
@@ -94,16 +90,16 @@ public class Graficador {
     }
 
     /**
-     *
-     * @return
+     * Metodo que devuelve los valores puestos en datastet
+     * @return dataset
      */
     public DefaultCategoryDataset getDataset() {
         return dataset;
     }
     
 
-    /**
-     *
+    /*
+     * Metodo encargado de dibujar la grafica
      */
     public void drawGraphics() {
         JFreeChart chart = ChartFactory.createBarChart(getTitulo(), getCategoria(), getTipoValor(), getDataset(), PlotOrientation.VERTICAL, true, true, false);
