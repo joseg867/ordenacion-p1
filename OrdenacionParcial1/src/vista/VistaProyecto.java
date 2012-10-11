@@ -25,20 +25,20 @@ public class VistaProyecto extends javax.swing.JFrame {
     private InternalSortController controlInterno;
     private ExternalSortController controlExterno;
     private final CopiaArchivo copiador;
-    
+
     /**
      *
      * @return
      */
-    public File getRaiz(){
+    public File getRaiz() {
         return this.raiz;
     }
-    
+
     /**
      *
      * @param raiz
      */
-    public void setRaiz(File raiz){
+    public void setRaiz(File raiz) {
         this.raiz = raiz;
     }
 
@@ -268,8 +268,8 @@ public class VistaProyecto extends javax.swing.JFrame {
             this.separado = controlDao.writeFile(lista, "separado");
             copiador.createCopyFile(separado, "directa.txt");
             copiador.createCopyFile(separado, "natural.txt");
-            copiador.createCopyFile(separado, "equi.txt");
-            
+            //copiador.createCopyFile(separado, "equi.txt");
+
             JOptionPane.showMessageDialog(this, "¡Archivo cargado y separado con exito!");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Archivo no cargado");
@@ -288,7 +288,7 @@ public class VistaProyecto extends javax.swing.JFrame {
         graficador.setData(controlInterno.getMilisQuickSort(), "Milisegundos", "Quicksort");
         graficador.drawGraphics();
 
-        
+
     }//GEN-LAST:event_ordenarInternoBtnActionPerformed
 
     private void ordenarShellBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarShellBtnActionPerformed
@@ -306,14 +306,15 @@ public class VistaProyecto extends javax.swing.JFrame {
         // TODO add your handling code here:
         Graficador graficador = new Graficador("Ordenacion Externa", "Algortimos de Ordenacion Externa", "Milisegundos");
         graficador.setData(controlExterno.getMilisMezclaDirecta(), "Milisegundos", "Mezcla Directa");
+        graficador.setData(controlExterno.getMilisMezclaNatural(), "Milisegundos", "Mezcla Natural");
         graficador.setData(controlExterno.getMilisMezclaEquilibrada(), "Milisegundos", "Mezcla Equilibrada");
-        //graficador.setData(controlExterno.getMilisMezclaNatural(), "Milisegundos", "Mezcla Natural");
+
         graficador.drawGraphics();
     }//GEN-LAST:event_ordenarExternoBtnActionPerformed
 
     private void aboutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutBtnActionPerformed
         // TODO add your handling code here:
-        Licencia licencia = new Licencia(this,false);
+        Licencia licencia = new Licencia(this, false);
         licencia.setVisible(true);
     }//GEN-LAST:event_aboutBtnActionPerformed
 
