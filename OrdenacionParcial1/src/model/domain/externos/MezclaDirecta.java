@@ -9,13 +9,13 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
- *
+ * Clase que se encarga del ordenmiento MezclaDirecta
  * @author GustavoCanul, NoeCob, ArandiLopez
  */
 public class MezclaDirecta {
     
     /**
-     *
+     * Metodo que particiona los elementos del String
      * @param F
      * @param F1
      * @param F2
@@ -32,7 +32,7 @@ public class MezclaDirecta {
 	    }
 
 	    /**
-     *
+     * Metodo que particiona los elementos del String
      * @param F
      * @param F1
      * @param F2
@@ -80,8 +80,8 @@ public class MezclaDirecta {
 	        pwf2.close();
 	    }
 
-	    /**
-     *
+    /**
+     * Metodo que fusiona las particiones creadas 
      * @param F
      * @param F1
      * @param F2
@@ -211,10 +211,10 @@ public class MezclaDirecta {
 	    }//Fin de metodo Fusiona
 
 	//Terminar el codigo para que devuelva el numero de elementos que tiene el archivo
-	    /**
-     *
+    /**
+     * Metodo que devuelve el numero de Elemento en el Archivo 
      * @param F
-     * @return
+     * @return elementos
      */
     public int numeroElementos(String F) {
 	        int elementos = 0;
