@@ -27,7 +27,7 @@ public class OrdenamientoShellSort {
     
 
     /**
-     *
+     * Metodo encargado de comparar las palabras por el metodo Shellsort PaperNov
      */
     public void ShellSortPapernov() {
         int INT = 0, I, N, k = 1;
@@ -69,7 +69,7 @@ public class OrdenamientoShellSort {
     }
 
     /**
-     *
+     *Metodo encargado de comparar las palabras por el metodo Shellsort Hibbard
      */
     public void ShellSortHibbard() {
         int INT = 0, I, N, k = 1;
@@ -111,7 +111,7 @@ public class OrdenamientoShellSort {
     }
 
     /**
-     *
+     * Metodo encargado de comparar las palabras por el metodo Shellsort Frank
      */
     public void ShellSortFrank() {
         int INT = 0, I, N, k = 1;
@@ -183,7 +183,7 @@ public class OrdenamientoShellSort {
     }
 
     /**
-     *
+     * Metodo que imprime 
      */
     public void imprimir() {
         for (int i = 0; i < palabras.size(); i++) {
