@@ -5,12 +5,10 @@
 package vista;
 
 import controller.*;
-import java.awt.Rectangle;
 import java.io.File;
 import java.util.ArrayList;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import org.jfree.chart.ChartPanel;
 import org.jvnet.substance.SubstanceLookAndFeel;
 
 /**
@@ -18,7 +16,7 @@ import org.jvnet.substance.SubstanceLookAndFeel;
  * @author ArandiLopez
  */
 public class VistaProyecto extends javax.swing.JFrame {
-    
+
     //Atributos nuevos
     private File raiz, separado;
     private ArrayList<String> lista;
@@ -57,14 +55,13 @@ public class VistaProyecto extends javax.swing.JFrame {
     public void setSeparado(File separado) {
         this.separado = separado;
     }
-    
 
     /**
      * Creates new form VistaProyecto
      */
     public VistaProyecto() {
 
-        
+
         initComponents();
         nombreDocLb.setText("         ");
         cargadoLb.setText("No se ha cargado ningun archivo ");
@@ -72,7 +69,6 @@ public class VistaProyecto extends javax.swing.JFrame {
         controlInterno = new InternalSortController();
         controlExterno = new ExternalSortController();
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -263,6 +259,7 @@ public class VistaProyecto extends javax.swing.JFrame {
             setRaiz(chooser.getSelectedFile());
             cargadoLb.setText("Archivo Cargado: ");
             nombreDocLb.setText(getRaiz().getName());
+
             this.lista = controlDao.readFile(getRaiz());
             controlInterno.setArregloList(lista);
             this.separado = controlDao.writeFile(lista, "separado");
@@ -277,21 +274,21 @@ public class VistaProyecto extends javax.swing.JFrame {
     private void ordenarInternoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarInternoBtnActionPerformed
         // TODO add your handling code here:
         Graficador graficador;
-        graficador = new Graficador("Ordenacion Interna","Algoritmos de Ordenacion Interna","Milisegundos");
+        graficador = new Graficador("Ordenacion Interna", "Algoritmos de Ordenacion Interna", "Milisegundos");
         graficador.setData(controlInterno.getMilisInsercion(), "Milisegundos", "Insercion");
         graficador.setData(controlInterno.getMilisBurbujaMenor(), "Milisegundos", "Burbuja Menor");
         graficador.setData(controlInterno.getMilisBurbujaMayor(), "Milisegundos", "Burbuja Mayor");
         graficador.setData(controlInterno.getMilisMergeSort(), "Milisegundos", "Mergesort");
         graficador.setData(controlInterno.getMilisQuickSort(), "Milisegundos", "Quicksort");
         graficador.drawGraphics();
-        
+
         
     }//GEN-LAST:event_ordenarInternoBtnActionPerformed
 
     private void ordenarShellBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarShellBtnActionPerformed
         // TODO add your handling code here:
         Graficador graficador;
-        graficador = new Graficador("Ordenacion por Shellsort","Algoritmos de Shellsort","Milisegundos");
+        graficador = new Graficador("Ordenacion por Shellsort", "Algoritmos de Shellsort", "Milisegundos");
         graficador.setData(controlInterno.getMilisShellIncrementoNormal(), "Milisegundos", "Incremento Normal");
         graficador.setData(controlInterno.getMilisShellSerieFrank(), "Milisegundos", "Serie de Frank");
         graficador.setData(controlInterno.getMilisShellSerieHibberd(), "Milisegundos", "Serie de Hibberd");
@@ -301,7 +298,7 @@ public class VistaProyecto extends javax.swing.JFrame {
 
     private void ordenarExternoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ordenarExternoBtnActionPerformed
         // TODO add your handling code here:
-        Graficador graficador = new Graficador("Ordenacion Externa","Algortimos de Ordenacion Externa","Milisegundos");
+        Graficador graficador = new Graficador("Ordenacion Externa", "Algortimos de Ordenacion Externa", "Milisegundos");
         graficador.setData(controlExterno.getMilisMezclaDirecta(), "Milisegundos", "Mezcla Directa");
         graficador.setData(controlExterno.getMilisMezclaEquilibrada(), "Milisegundos", "Mezcla Equilibrada");
         graficador.drawGraphics();
@@ -330,7 +327,6 @@ public class VistaProyecto extends javax.swing.JFrame {
             }
         });
     }
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane TabPane;
     private javax.swing.JButton aboutBtn;
@@ -346,5 +342,4 @@ public class VistaProyecto extends javax.swing.JFrame {
     private javax.swing.JButton ordenarShellBtn;
     private javax.swing.JPanel shellPanel;
     // End of variables declaration//GEN-END:variables
-    
 }
