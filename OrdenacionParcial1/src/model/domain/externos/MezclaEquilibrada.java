@@ -39,7 +39,7 @@ public class MezclaEquilibrada {
     }
 
     /**
-     *
+     * Metodo que recibe un valor Booleano 
      * @param b
      * @return b 
      */
@@ -269,7 +269,7 @@ public class MezclaEquilibrada {
     }
 
     /**
-     *
+     * Metodo que Escribe los nombres de los archivos 
      * @param Aux
      * @param R
      * @param FC
@@ -309,7 +309,7 @@ public class MezclaEquilibrada {
     }
 
     /**
-     *
+     * Metodo que recibe los nombres de los archivos y los escribe
      * @param Aux
      * @param R
      * @param FC
@@ -349,7 +349,7 @@ public class MezclaEquilibrada {
     }
 
     /**
-     *
+     * Metodo que llama a ayuda para pasarle los parametros escribir
      * @param Aux
      * @param R
      * @param F
