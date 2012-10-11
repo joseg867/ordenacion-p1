@@ -268,7 +268,7 @@ public class VistaProyecto extends javax.swing.JFrame {
             this.separado = controlDao.writeFile(lista, "separado");
             copiador.createCopyFile(separado, "directa.txt");
             copiador.createCopyFile(separado, "natural.txt");
-            //copiador.createCopyFile(separado, "equi.txt");
+            copiador.createCopyFile(separado, "equi.txt");
 
             JOptionPane.showMessageDialog(this, "¡Archivo cargado y separado con exito!");
         } catch (Exception e) {
