@@ -1,25 +1,24 @@
 package model.domain.internos;
-
 import java.util.ArrayList;
 
 /**
- *
- * @author Noe
+ * Clase que se encarga de manejar los metodos de ordenamiento interno 
+ * @author GustavoCanul, NoeCob, ArandiLopez
  */
 public class OrdenamientoInterno {
 
 	private ArrayList<String> palabras;
 
-	/**
-     *
-     * @return
+    /**
+     * Metodo que devuelve un String de palabras
+     * @return Palabras
      */
     public ArrayList<String> getPalabras() {
 		return palabras;
 	}
 
-	/**
-     *
+    /**
+     * Metodo que inicializa el arrayList donde van las palabras
      * @param palabras
      */
     public void setPalabras(ArrayList<String> palabras) {
@@ -28,8 +27,8 @@ public class OrdenamientoInterno {
 
 	}
 
-	/**
-     *
+   /**
+     *Metodo que se encarga de ordenar por insercion
      */
     public void insercion() {
 		int i, k;
@@ -50,8 +49,8 @@ public class OrdenamientoInterno {
 		}
 	}
 
-	/**
-     *
+   /**
+     *Metodo que se encarga de ordenar por burbujaMenor
      */
     public void burbujaMenor() {
 		int i, j;
@@ -175,10 +174,10 @@ public class OrdenamientoInterno {
 		return pos;
 	}
 
-	/**
-     *
+   /**
+     * Metodo encargado de el ArrayList por MergeSort
      * @param L
-     * @return
+     * @return L
      */
     public ArrayList<String> ordenaMerge(ArrayList<String> L) {
 		int n = L.size(), i, m;
@@ -198,10 +197,10 @@ public class OrdenamientoInterno {
 	}
 
 	/**
-     *
+     * Metodo que pone los valores ordenados por el MergeSort en Lista
      * @param L1
      * @param L2
-     * @return
+     * @return Lista
      */
     public ArrayList<String> Merge(ArrayList<String> L1, ArrayList<String> L2) {
 
@@ -229,8 +228,8 @@ public class OrdenamientoInterno {
 		return Lista;
 	}
 
-	/**
-     *
+   /** 
+     * Metodo que se encarga de imprimir las palabras en la lista 
      * @param palabras
      */
     public void imprimir(ArrayList<String> palabras) {

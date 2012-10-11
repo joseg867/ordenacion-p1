@@ -1,29 +1,24 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package model.domain.internos;
-
 import java.util.ArrayList;
 
 /**
  *
- * @author gustavo
+ * @author GustavoCanul, NoeCob ,ArandiLopez
  */
 public class OrdenamientoShellSort {
 
     private ArrayList<String> palabras;
 
     /**
-     *
-     * @return
+     * Devuelve el ArrayList de palabras
+     * @return palabras
      */
     public ArrayList<String> getPalabras() {
         return palabras;
     }
 
     /**
-     *
+     * Inicializa el valor del String palabras
      * @param palabras
      */
     public void setPalabras(ArrayList<String> palabras) {
