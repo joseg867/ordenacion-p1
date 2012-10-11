@@ -223,7 +223,7 @@ public class MezclaNatural {
      */
 //    public static void main(String[] args) {
 //        MezclaNatural mezcla = new MezclaNatural();
-//        String F = "F.txt";
+//        String F = "separado.txt";
 //        String F1 = "F1.txt";
 //        String F2 = "F2.txt";
 //        mezcla.mezclaNatural(F, F1, F2);
