@@ -1,11 +1,9 @@
 package model.domain.externos;
-
-//
 import java.io.*;
 
 /**
- *
- * @author Gustavo Canul
+ * Clase que se encarga del ordenamiento MezclaEquilibrada
+ * @author GustavoCanul, NoeCob, ArandiLopez
  */
 public class MezclaEquilibrada {
 
@@ -18,7 +16,7 @@ public class MezclaEquilibrada {
     
 
     /**
-     *
+     * Clase que se encarga de leer un archivo
      * @param F
      * @throws IOException
      */
@@ -43,7 +41,7 @@ public class MezclaEquilibrada {
     /**
      *
      * @param b
-     * @return
+     * @return b 
      */
     public static boolean cambiob(boolean b) {
         
@@ -51,7 +49,7 @@ public class MezclaEquilibrada {
     }
 
     /**
-     *
+     * Metodo encargado de realizar la mezcla Equilibrada
      * @param F
      * @param F1
      * @param F2
@@ -84,7 +82,7 @@ public class MezclaEquilibrada {
     }
 
     /**
-     *
+     * Metodo que se encarga de particionar
      * @param F
      * @param F2
      * @param F3
@@ -146,7 +144,7 @@ public class MezclaEquilibrada {
     }
 
     /**
-     *
+     * Metodo que se encarga de unir las particiones 
      * @param FA
      * @param FB
      * @param FC
