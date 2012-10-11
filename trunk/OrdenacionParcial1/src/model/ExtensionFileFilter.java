@@ -1,18 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package model;
-
-
 import java.io.*;
-
 import javax.swing.filechooser.FileFilter;
 
 /**
- * Clase que establece el filtro para la busqueda de tipo de archivos a reproducir.
- * @author Gustavo Canul, Arandi Lopez, Ruben Espiritu, Ricardo Zaldivar
+ * Clase que establece el filtro para la busqueda de tipo de archivos a leer
+ * @author GustavoCanul, NoeCob,  ArandiLopez
  */
 public class ExtensionFileFilter extends FileFilter implements Serializable
 {

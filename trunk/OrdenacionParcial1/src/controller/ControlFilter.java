@@ -4,8 +4,7 @@ import model.ExtensionFileFilter;
 
 /**
  * Clase que controla el filtro del FileChooser.
- *
- * @author ArandiLopez
+ * @author GustavoCanul, NoeCob, ArandiLopez
  */
 public class ControlFilter {
 

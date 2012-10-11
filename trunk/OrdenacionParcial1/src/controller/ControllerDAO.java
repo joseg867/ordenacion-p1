@@ -1,16 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package controller;
 
 import DAO.DAO;
 import java.io.File;
 import java.util.ArrayList;
 
-/**
- *
- * @author ArandiLopez
+/** 
+ * Clase que controla el DAO 
+ * @author GustavoCanul, NoeCob, ArandiLopez
  */
 public class ControllerDAO {
 
@@ -18,7 +14,6 @@ public class ControllerDAO {
 
     /**
      * Metodo que crea un DAO
-     * @param Dao 
      */
     public ControllerDAO() {
         this.dao = new DAO();
@@ -41,7 +36,7 @@ public class ControllerDAO {
     }
     
     /**
-     * 
+     * Lee el archivo 
      * @param root
      * @return dao.leer
      */
@@ -50,7 +45,7 @@ public class ControllerDAO {
     }
     
     /**
-     * Metodo que escribe en el archivo 
+     * Escribe en el archivo 
      * @param list
      * @param name
      * @return dao.escribir 

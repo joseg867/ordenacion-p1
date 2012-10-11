@@ -6,8 +6,9 @@ import java.util.StringTokenizer;
 import javax.swing.JFileChooser;
 
 /**
- *
- * @author Noe
+ * Clase que lee y separa las palabras del archivo 
+ * @author GustavoCanul, NoeCob, ArandiLopez
+ * 
  */
 public class DAO {
 
@@ -23,7 +24,7 @@ public class DAO {
     }
 
     /**
-     * Metodo que obtiene los valores a la lista
+     * retorna la lista
      * @return lista
      */
     public ArrayList<String> getLista() {
@@ -39,7 +40,7 @@ public class DAO {
     }
 
     /**
-     * Metodo que obtiene la ruta del archivo
+     * retorna la ruta del archivo 
      * @return path
      */
     public String getPath() {
@@ -47,7 +48,7 @@ public class DAO {
     }
 
     /**
-     * Metodo que asigna la direccion del archivo
+     * 
      * @param path
      */
     public void setPath(String path) {
@@ -55,15 +56,15 @@ public class DAO {
     }
 
     /**
-     *
-     * @return
+     * retorna el archivo separado 
+     * @return separado 
      */
     public File getSeparado() {
         return separado;
     }
 
     /**
-     *
+     * inicializa el archivo separado 
      * @param separado
      */
     public void setSeparado(File separado) {
@@ -130,7 +131,7 @@ public class DAO {
     }
     
     /**
-     * Metodo pone los Strings del archivo en un array
+     * Metodo pone los Strings del archivo leido en un array
      * @param lista
      * @return array
      */

@@ -31,6 +31,9 @@ public class OrdenamientoShellSort {
     }
     
 
+    /**
+     *
+     */
     public void ShellSortPapernov() {
         int INT = 0, I, N, k = 1;
         String AUX;
@@ -70,6 +73,9 @@ public class OrdenamientoShellSort {
         }
     }
 
+    /**
+     *
+     */
     public void ShellSortHibbard() {
         int INT = 0, I, N, k = 1;
         String AUX;
@@ -109,6 +115,9 @@ public class OrdenamientoShellSort {
         }
     }
 
+    /**
+     *
+     */
     public void ShellSortFrank() {
         int INT = 0, I, N, k = 1;
         String AUX;

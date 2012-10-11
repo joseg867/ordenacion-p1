@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package controller;
 
 import java.io.*;
@@ -14,8 +10,8 @@ import model.domain.externos.MezclaDirecta;
 import model.domain.externos.MezclaEquilibrada;
 
 /**
- *
- * @author gustavo
+ * Clase que controla los metodos de ordenamientoexterno
+ * @author GustavoCanul, NoeCob, ArandiLopez
  */
 public class ExternalSortController {
     
@@ -26,13 +22,24 @@ public class ExternalSortController {
     private static final String ARCHIVOORIGEN = "F.txt", AUXILIAR1 = "F1.txt", AUXILIAR2 = "F2.txt",AUXILIAR3 = "F3" ;
 
     
+    /**
+     *
+     */
     public ExternalSortController() {
     }
 
+    /**
+     * Devuelve los valores del origen 
+     * @return origen 
+     */
     public File getOrigen() {
         return origen;
     }
 
+    /**
+     * Inicializa los valores de origen 
+     * @param Origen
+     */
     public void setOrigen(File Origen) {
         this.origen = Origen;
     }
@@ -40,14 +47,15 @@ public class ExternalSortController {
     
     
     /**
-     * @return
+     * Devuelve los valores de mezclaDirecta
+     * @return mezclaDirecta
      */
     public MezclaDirecta getMezclaDirecta() {
         return mezclaDirecta;
     }
 
     /**
-     *
+     * Inicializa los valores de mezclaDirecta 
      * @param mezclaDirecta
      */
     public void setMezclaDirecta(MezclaDirecta mezclaDirecta) {
@@ -55,6 +63,7 @@ public class ExternalSortController {
     }
 
     /**
+     * Devuelve los valores de mezclaEquilibrada 
      * @return the mezclaEquilibrada
      */
     public MezclaEquilibrada getMezclaEquilibrada() {
@@ -69,8 +78,8 @@ public class ExternalSortController {
     }
 
     /**
-     *
-     * @return
+     * Devuelve el tiempo de ejecucion de Mezcladirecta
+     * @return t1 
      */
     public double getMilisMezclaDirecta() {
         double t0 = 0, t1 = 0;
@@ -85,6 +94,10 @@ public class ExternalSortController {
         return t1;
     }
 
+    /**
+     * Devuelve el tiempo de ejecucion de MezclaEquilibrada
+     * @return t1
+     */
     public double getMilisMezclaEquilibrada() {
         double t0 = 0, t1 = 0;
         try {
@@ -100,6 +113,11 @@ public class ExternalSortController {
         return t1;
     }
     
+    /**
+     * Copia y devuelve los valores del archivo separado 
+     * @param separado
+     * @return copySeparado
+     */
     public String getCopyFile(File separado){
         File copySeparado = new File(ARCHIVOORIGEN);
         try {

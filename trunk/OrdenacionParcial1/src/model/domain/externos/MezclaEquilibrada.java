@@ -9,11 +9,19 @@ import java.io.*;
  */
 public class MezclaEquilibrada {
 
+    /**
+     *
+     */
     public MezclaEquilibrada() {
     }
     
     
 
+    /**
+     *
+     * @param F
+     * @throws IOException
+     */
     public static void elemen(String F) throws IOException {
         FileReader fr = new FileReader(F);
         BufferedReader br = new BufferedReader(fr);
@@ -32,11 +40,24 @@ public class MezclaEquilibrada {
         br.close();
     }
 
+    /**
+     *
+     * @param b
+     * @return
+     */
     public static boolean cambiob(boolean b) {
         
         return !b;
     }
 
+    /**
+     *
+     * @param F
+     * @param F1
+     * @param F2
+     * @param F3
+     * @throws IOException
+     */
     public void mezclaequilibrada(String F, String F1, String F2, String F3) throws IOException {
         particioninicial(F, F2, F3);
         String inLineF1 = " sd";
@@ -62,6 +83,13 @@ public class MezclaEquilibrada {
         } while (inLineF1 != null || inLineF3 != null);
     }
 
+    /**
+     *
+     * @param F
+     * @param F2
+     * @param F3
+     * @throws IOException
+     */
     public static void particioninicial(String F, String F2, String F3) throws IOException {
         String Aux = null , R ;
         boolean BAND = true;
@@ -117,6 +145,14 @@ public class MezclaEquilibrada {
         br.close();
     }
 
+    /**
+     *
+     * @param FA
+     * @param FB
+     * @param FC
+     * @param FD
+     * @throws IOException
+     */
     public static void particionfusion(String FA, String FB, String FC, String FD) throws IOException {
         String R1 = new String(),R2 = new String(), Aux = new String();
         boolean B, DELE1, DELE2;
@@ -234,6 +270,16 @@ public class MezclaEquilibrada {
         pwFD.close();
     }
 
+    /**
+     *
+     * @param Aux
+     * @param R
+     * @param FC
+     * @param FD
+     * @param B
+     * @return
+     * @throws IOException
+     */
     public static String ayuda1(String Aux, String R, String FC, String FD, boolean B) throws IOException {
         Aux = R;
 
@@ -264,6 +310,16 @@ public class MezclaEquilibrada {
 
     }
 
+    /**
+     *
+     * @param Aux
+     * @param R
+     * @param FC
+     * @param FD
+     * @param B
+     * @return
+     * @throws IOException
+     */
     public static String ayuda2(String Aux, String R, String FC, String FD, boolean B) throws IOException {
         FileWriter fwFC = new FileWriter(FC, true);
         BufferedWriter bwFC = new BufferedWriter(fwFC);
@@ -294,6 +350,16 @@ public class MezclaEquilibrada {
         return Aux;
     }
 
+    /**
+     *
+     * @param Aux
+     * @param R
+     * @param F
+     * @param FC
+     * @param FD
+     * @param B
+     * @throws IOException
+     */
     public static void ayuda3(String Aux, String R, String F, String FC, String FD, boolean B) throws IOException {
         // System.out.println("AYUDA3 Aux: "+Aux+" R:"+R+" F:"+F);
         FileReader frF = new FileReader(F);
